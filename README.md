@@ -10,7 +10,7 @@
 
 ---
 
-
+The goal of this project is to make an application that allows users to view and purchase tickets/race packages to Formula 1 events.
 
 ## Table of Contents
 
@@ -27,6 +27,11 @@
 
 ### User Goals
 
+I expect that the majority of the users will fall into the following criteria:
+
+- A user looking to purchase event tickets.
+- A user looking for information about upcoming events.
+- A site manager adding/removing information and race packages.
 
 ### User Stories
 
