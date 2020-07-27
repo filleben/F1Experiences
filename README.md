@@ -38,6 +38,9 @@ I expect that the majority of the users will fall into the following criteria:
 
 ### Wireframes
 
+[Here](https://github.com/filleben/F1Experiences/tree/master/wireframes) are the designs I made for the site.
+
+The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 ### Design Choices
 
