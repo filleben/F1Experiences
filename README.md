@@ -35,6 +35,12 @@ I expect that the majority of the users will fall into the following criteria:
 
 ### User Stories
 
+- As a user, I want to be able to view a list of events.
+- As a user, I want to be able to view a list of tickets for each event.
+- As a user, I want to be able to view a running total of my puchases.
+- As a user, I want to be able to create an account to view and manage my orders.
+- As a user, I want to be able to edit and remove items from my cart while shopping.
+- As a user, I want to be able to pay for tickets using card payment.
 
 ### Wireframes
 
