@@ -26,3 +26,27 @@
     color: #ffffff;
     background-color: #000000;
 }
+
+footer {
+    background-color: #ff0000;
+}
+
+.social-links li a i {
+    width: 50px;
+    margin-top: 10px;
+    padding: 20px 0;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: #000000;
+}
