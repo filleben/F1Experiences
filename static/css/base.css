@@ -8,3 +8,21 @@
     font-family: "f1FontBold";
     src: url("/static/fonts/Formula1-Bold.ttf") format("truetype");
 }
+
+.font {
+    font-family: "f1Font";
+}
+
+.navbar {
+    background-color: #ff0000;
+}
+
+.btn-outline {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
