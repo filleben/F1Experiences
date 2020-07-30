@@ -1,0 +1,200 @@
+[
+    {
+        "pk": 1,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 AUSTRALIAN GRAND PRIX 2020",
+            "friendly_name": "Australian GP",
+            "date": "13-15 March"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 BAHRAIN GRAND PRIX 2020",
+            "friendly_name": "Bahrain GP",
+            "date": "20-22 March"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 VIETNAM GRAND PRIX 2020",
+            "friendly_name": "Vietnam GP",
+            "date": "3-5 April"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 CHINESE GRAND PRIX 2020",
+            "friendly_name": "Chinese GP",
+            "date": "17-19 April"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 DUTCH GRAND PRIX 2020",
+            "friendly_name": "Dutch GP",
+            "date": "1-3 May"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GRAN PREMIO DE ESPAÑA 2020",
+            "friendly_name": "Spanish GP",
+            "date": "8-10 May"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GRAND PRIX DE MONACO 2020",
+            "friendly_name": "Monaco GP",
+            "date": "21-24 May"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 AZERBAIJAN GRAND PRIX 2020",
+            "friendly_name": "Azerbaijan GP",
+            "date": "5-7 June"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GRAND PRIX DU CANADA 2020",
+            "friendly_name": "Candain GP",
+            "date": "12-14 June"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GRAND PRIX DE FRANCE 2020",
+            "friendly_name": "French GP",
+            "date": "25-28 June"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2020",
+            "friendly_name": "Austrian GP",
+            "date": "3-5 July"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 BRITISH GRAND PRIX 2020",
+            "friendly_name": "British GP",
+            "date": "17-19 July"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 MAGYAR NAGYDÍJ 2020",
+            "friendly_name": "Hungarian GP",
+            "date": "31-2 July/August"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 BELGIAN GRAND PRIX 2020",
+            "friendly_name": "Belgain GP",
+            "date": "28-30 August"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GRAN PREMIO D’ITALIA 2020",
+            "friendly_name": "Italian GP",
+            "date": "4-6 August"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2020",
+            "friendly_name": "Singapore GP",
+            "date": "18-20 September"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 RUSSIAN GRAND PRIX 2020",
+            "friendly_name": "Russian GP",
+            "date": "25-27 September"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 JAPANESE GRAND PRIX 2020",
+            "friendly_name": "Japanese GP",
+            "date": "9-11 October"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 UNITED STATES GRAND PRIX 2020",
+            "friendly_name": "United States GP",
+            "date": "23-25 October"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2020",
+            "friendly_name": "Mexican GP",
+            "date": "30-1 October/November"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 BRAZILIAN GRAND PRIX 2020",
+            "friendly_name": "Brazilian GP",
+            "date": "13-15 November"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "races.event",
+        "fields": {
+            "name": "FORMULA 1 ABU DHABI GRAND PRIX 2020",
+            "friendly_name": "Abu Dhabi GP",
+            "date": "27-29 November"
+        }
+    }
+]
