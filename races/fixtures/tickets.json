@@ -1,0 +1,12 @@
+[
+    {
+        "pk": 1,
+        "model": "races.ticket",
+        "fields": {
+            "name": "Champions Club",
+            "description": "Witness the 2021 Australian Grand Prix at Albert Park in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00,
+            "race": 1
+        }
+    }
+]
