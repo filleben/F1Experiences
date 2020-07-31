@@ -1,7 +1,7 @@
 [
     {
         "pk": 1,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 AUSTRALIAN GRAND PRIX 2020",
             "friendly_name": "Australian GP",
@@ -10,7 +10,7 @@
     },
     {
         "pk": 2,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 BAHRAIN GRAND PRIX 2020",
             "friendly_name": "Bahrain GP",
@@ -19,7 +19,7 @@
     },
     {
         "pk": 3,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 VIETNAM GRAND PRIX 2020",
             "friendly_name": "Vietnam GP",
@@ -28,7 +28,7 @@
     },
     {
         "pk": 4,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 CHINESE GRAND PRIX 2020",
             "friendly_name": "Chinese GP",
@@ -37,7 +37,7 @@
     },
     {
         "pk": 5,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 DUTCH GRAND PRIX 2020",
             "friendly_name": "Dutch GP",
@@ -46,7 +46,7 @@
     },
     {
         "pk": 6,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAN PREMIO DE ESPAÑA 2020",
             "friendly_name": "Spanish GP",
@@ -55,7 +55,7 @@
     },
     {
         "pk": 7,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAND PRIX DE MONACO 2020",
             "friendly_name": "Monaco GP",
@@ -64,7 +64,7 @@
     },
     {
         "pk": 8,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 AZERBAIJAN GRAND PRIX 2020",
             "friendly_name": "Azerbaijan GP",
@@ -73,7 +73,7 @@
     },
     {
         "pk": 9,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAND PRIX DU CANADA 2020",
             "friendly_name": "Candain GP",
@@ -82,7 +82,7 @@
     },
     {
         "pk": 10,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAND PRIX DE FRANCE 2020",
             "friendly_name": "French GP",
@@ -91,7 +91,7 @@
     },
     {
         "pk": 11,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2020",
             "friendly_name": "Austrian GP",
@@ -100,7 +100,7 @@
     },
     {
         "pk": 12,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 BRITISH GRAND PRIX 2020",
             "friendly_name": "British GP",
@@ -109,7 +109,7 @@
     },
     {
         "pk": 13,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 MAGYAR NAGYDÍJ 2020",
             "friendly_name": "Hungarian GP",
@@ -118,7 +118,7 @@
     },
     {
         "pk": 14,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 BELGIAN GRAND PRIX 2020",
             "friendly_name": "Belgain GP",
@@ -127,7 +127,7 @@
     },
     {
         "pk": 15,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAN PREMIO D’ITALIA 2020",
             "friendly_name": "Italian GP",
@@ -136,7 +136,7 @@
     },
     {
         "pk": 16,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2020",
             "friendly_name": "Singapore GP",
@@ -145,7 +145,7 @@
     },
     {
         "pk": 17,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 RUSSIAN GRAND PRIX 2020",
             "friendly_name": "Russian GP",
@@ -154,7 +154,7 @@
     },
     {
         "pk": 18,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 JAPANESE GRAND PRIX 2020",
             "friendly_name": "Japanese GP",
@@ -163,7 +163,7 @@
     },
     {
         "pk": 19,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 UNITED STATES GRAND PRIX 2020",
             "friendly_name": "United States GP",
@@ -172,7 +172,7 @@
     },
     {
         "pk": 20,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2020",
             "friendly_name": "Mexican GP",
@@ -181,7 +181,7 @@
     },
     {
         "pk": 21,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 BRAZILIAN GRAND PRIX 2020",
             "friendly_name": "Brazilian GP",
@@ -190,7 +190,7 @@
     },
     {
         "pk": 22,
-        "model": "races.event",
+        "model": "races.race",
         "fields": {
             "name": "FORMULA 1 ABU DHABI GRAND PRIX 2020",
             "friendly_name": "Abu Dhabi GP",
