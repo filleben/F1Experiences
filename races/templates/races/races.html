@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<header>
+    <div class="col-12 hero-image">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-sm-12 my-auto">
+                    <h1 class="display-4 font-bold text-white title">The closest you can get to Formula 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="section">
+    <div class="container">
+        <div class="row"> {{ races }}</div>
+    </div>
+
+</div>
+{% endblock %}
