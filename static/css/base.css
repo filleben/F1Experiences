@@ -64,15 +64,27 @@ footer {
 }
 
 html {
-    overflow: hidden;
+    overflow: auto;
 }
 
 .title {
     text-transform: uppercase;
 }
 
+.race-image {
+    height: 200px;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
 @media(max-width: 450px) {
     .title{
         font-size: 43px;
+    }
+}
+
+@media(max-width: 570px) {
+    .title-small{
+        font-size: 32px;
     }
 }
