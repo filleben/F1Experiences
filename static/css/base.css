@@ -77,14 +77,20 @@ html {
     border-radius: 0.5rem;
 }
 
+.flag {
+    height: 150px;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
 @media(max-width: 450px) {
-    .title{
+    .title {
         font-size: 43px;
     }
 }
 
 @media(max-width: 570px) {
-    .title-small{
+    .title-small {
         font-size: 32px;
     }
 }
