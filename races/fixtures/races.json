@@ -7,7 +7,9 @@
             "friendly_name": "Australian GP",
             "date": "13-15 March",
             "image_url": "https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11216-F1-Experience-Australia-Event-Image-e6444dbc7f7a1dc7066d17312d186695.jpg",
-            "image": "Australia.jpg"
+            "image": "Australia.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/as-flag.gif",
+            "flag": "AusFlag.jpg"
         }
     },
     {
