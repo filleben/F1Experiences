@@ -26,8 +26,8 @@
     </div>
     <div class="row">
         {% for race in races %}
-        <div class="col-lg-4 col-sm-6 font text-center mb-3">
-            <a href="">
+        <div class="col-lg-6 col-sm-8 font text-center mb-3">
+            <a href="{% url 'race_detail' race.id %}">
                 <img class="flag" src="{{ race.flag_url }}" alt="{{ race.name }}">
             </a>
             <div class="mt-3">{{ race.name }}</div>
