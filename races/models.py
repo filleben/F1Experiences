@@ -10,6 +10,7 @@ class Race(models.Model):
     image = models.ImageField(null=True, blank=True)
     flag_url = models.URLField(max_length=1024, null=True, blank=True)
     flag = models.ImageField(null=True, blank=True)
+    location = models.CharField(max_length=400)
 
     def __str__(self):
         return self.name
