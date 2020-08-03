@@ -71,12 +71,6 @@ html {
     text-transform: uppercase;
 }
 
-.race-image {
-    height: 200px;
-    width: 300px;
-    border-radius: 0.5rem;
-}
-
 .flag {
     height: 150px;
     width: 300px;
@@ -106,5 +100,11 @@ a:hover {
 @media(max-width: 570px) {
     .title-small {
         font-size: 32px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .hero-image {
+        height: 400px;
     }
 }
