@@ -12,7 +12,7 @@ def all_races(request):
 
 def race_details(request, race_id):
     races = Race.objects.filter(id=race_id)
-    tickets = Ticket.objects.filter(id=race_id)
+    tickets = Ticket.objects.filter(race_id=race_id)
 
     if not Race.objects.exists():
         raise Http404
