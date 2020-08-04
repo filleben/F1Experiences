@@ -26,9 +26,16 @@
     border-color: #ffffff;
 }
 
+.btn-cart:hover,
 .btn-outline:hover {
     color: #ffffff;
     background-color: #000000;
+}
+
+.btn-cart {
+    color: #ffffff;
+    border-color: #ff0000;
+    background-color: #ff0000;
 }
 
 footer {
@@ -89,6 +96,12 @@ a:hover {
     background-color: #ffffff;
     height: 10px;
     margin-top: 30px;
+}
+
+.circuit-map {
+    height: auto;
+    width: 600px;
+    border-radius: 0.5rem;
 }
 
 @media(max-width: 450px) {
