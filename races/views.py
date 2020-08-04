@@ -14,6 +14,10 @@ def race_details(request, race_id):
     races = Race.objects.filter(id=race_id)
     tickets = Ticket.objects.filter(race_id=race_id)
 
+    race_object=Race.objects.get(id=race_id)
+    race_object.race_views=race_object.race_views+1
+    race_object.save()
+
     if not Race.objects.exists():
         raise Http404
 
