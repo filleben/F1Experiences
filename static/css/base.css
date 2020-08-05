@@ -71,7 +71,7 @@ footer {
 }
 
 html {
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 .title {
