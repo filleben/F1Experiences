@@ -1,28 +1,53 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-lg navbar-dark font">
-    <a class="navbar-brand" href="#">
-        <img src="{% static 'images/f1_logo.png' %}" class="d-inline-block align-top navbar-logo" alt="F1 Logo">
-        Experiences</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white hvr-sweep-to-right mr-2" href="{% url 'home' %}">Home</a>
+  <a class="navbar-brand" href="#">
+    <img src="{% static 'images/f1_logo.png' %}" class="d-inline-block align-top navbar-logo" alt="F1 Logo">
+    Experiences</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto text-center">
+      <li class="nav-item">
+        <a class="nav-link text-white hvr-sweep-to-right mr-2" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hvr-sweep-to-right mr-2" href="{% url 'races' %}">Races</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white hvr-sweep-to-right mr-2" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <div>
+      <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+        <li class="list-inline-item dropdown">
+          <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="text-center">
+              <div><i class="fas fa-user fa-lg"></i></div>
+            </div>
+          </a>
+          <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            <a href="" class="dropdown-item">My Profile</a>
+            <a href="" class="dropdown-item">Logout</a>
+            {% else %}
+            <a href="" class="dropdown-item">Register</a>
+            <a href="" class="dropdown-item">Login</a>
+            {% endif %}
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white hvr-sweep-to-right mr-2" href="{% url 'races' %}">Races</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white hvr-sweep-to-right mr-2" href="#">Contact Us</a>
+        <li class="list-inline-item">
+          <a class="text-white nav-link" href="">
+            <div class="text-center">
+              <div><i class="fas fa-shopping-cart fa-lg"></i></div>
+            </div>
+          </a>
         </li>
       </ul>
-      <form method="GET" action="" class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
-        <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
-  </nav>
+  </div>
+</nav>
