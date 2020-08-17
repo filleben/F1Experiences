@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<header>
+    <div class="col-12 hero-image">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-sm-12 my-auto">
+                    <h1 class="display-4 font-bold text-white title title-small">FIA Formula One World Championship</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3 mb-3">
+                <p class="font location-text"><a href="{% url 'home' %}">Home</a> / Ticket Cart</p>
+                <h1 class="font">Ticket Cart</h1>
+                <hr class="w-100 mb-1">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {% if cart_items %}
+        {% else %}
+        <div class="col font text-center mb-3">
+            <p>Your cart is empty.</p>
+            <a href="{% url 'races' %}">
+                <button class="btn btn-cart my-2 my-sm-0" type="submit">View Races</button>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
