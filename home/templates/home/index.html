@@ -3,9 +3,12 @@
 
 {% block content %}
 <header>
-    <div class="col-12 hero-image">
-        <div class="container h-100">
-            <div class="row h-100">
+    <div class="col-12">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="{% static 'video/f1video.mp4' %}" type="video/mp4">
+        </video>
+        <div class="container mt-3">
+            <div class="row">
                 <div class="col-sm-12 my-auto">
                     <h1 class="display-4 font-bold text-white title">The closest you can get to Formula 1</h1>
                 </div>
@@ -49,35 +52,35 @@
             </div>
         </div>
     </div>
-    <div class="row mb-3">
-        <div class="col-lg-6 font text-center mb-3">
-            <div class="mt-3">WOW! What can I say…what a tremendous success from start to finish. Thank you to all
-                the
-                F1 Experiences staff – my kids and I loved every minute of it. We will be back next year!</div>
-            <div class="font-bold">Frank</div>
-            <div>2019 British Grand Prix</div>
-        </div>
-        <div class="col-lg-6 font text-center mb-3">
-            <div class="mt-3">We had an amazing time and will definitely be coming to another Grand Prix soon with
-                F1
-                Experiences!</div>
-            <div class="font-bold">Jasmin</div>
-            <div>2019 German Grand Prix</div>
-        </div>
-        <div class="col-lg-6 font text-center mb-3">
-            <div class="mt-3">From the behind the scenes pit lane walk to having the chance to meet my F1 idols, the
-                entire weekend was perfect. Loved every second of my Hero package.</div>
-            <div class="font-bold">Sandra</div>
-            <div>2019 Austrian Grand Prix</div>
-        </div>
-        <div class="col-lg-6 font text-center mb-3">
-            <div class="mt-3">Brilliant! Super hotel, very good grandstand and seat position. The F1 Insider Access
-                and
-                Paddock Club Reception were better than expectations. Baku is a wonderful city with lots to see and
-                do
-                outside the circuit activities.</div>
-            <div class="font-bold">Audrey & Roger</div>
-            <div>2018 Azerbaijan Grand Prix</div>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-lg-6 font text-center mb-3 half-border">
+                <div class="mt-3">WOW! What can I say…what a tremendous success from start to finish. Thank you to all
+                    the
+                    F1 Experiences staff – my kids and I loved every minute of it. We will be back next year!</div>
+                <div class="font-bold">Frank</div>
+                <div>2019 British Grand Prix</div>
+            </div>
+            <div class="col-lg-6 font text-center mb-3 half-border">
+                <div class="mt-3">We had an amazing time and will definitely be coming to another Grand Prix soon with
+                    F1
+                    Experiences!</div>
+                <div class="font-bold">Jasmin</div>
+                <div>2019 German Grand Prix</div>
+            </div>
+            <div class="col-lg-6 font text-center mb-3 half-border">
+                <div class="mt-3">From the behind the scenes pit lane walk to having the chance to meet my F1 idols, the
+                    entire weekend was perfect. Loved every second of my Hero package.</div>
+                <div class="font-bold">Sandra</div>
+                <div>2019 Austrian Grand Prix</div>
+            </div>
+            <div class="col-lg-6 font text-center mb-3 half-border">
+                <div class="mt-3">Brilliant! Super hotel, very good grandstand and seat position. The F1 Insider Access
+                    and Paddock Club Reception were better than expectations. Baku is a wonderful city with lots to see
+                    and do outside the circuit activities.</div>
+                <div class="font-bold">Audrey & Roger</div>
+                <div>2018 Azerbaijan Grand Prix</div>
+            </div>
         </div>
     </div>
 </div>
