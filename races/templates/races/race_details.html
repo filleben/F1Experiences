@@ -32,7 +32,7 @@
                 <div class="mt-3 font-bold">{{ ticket.name }}</div>
                 <div class="mt-3">{{ ticket.description }}</div>
                 <div class="mt-3 mb-3 font-bold">£ {{ ticket.price }} Per Person</div>
-                <form method="POST" action="">
+                <form method="POST" action="{% url 'add_to_cart' ticket.id %}" method="POST">
                     {% csrf_token %}
                     <div class="input-group justify-content-center">
                         <div class="form-group ">
