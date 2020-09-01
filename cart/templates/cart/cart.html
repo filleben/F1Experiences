@@ -23,15 +23,64 @@
         </div>
     </div>
     <div class="row">
-        {% if cart_items %}
-        {% else %}
-        <div class="col font text-center mb-3">
-            <p>Your cart is empty.</p>
-            <a href="{% url 'races' %}">
-                <button class="btn btn-cart my-2 my-sm-0" type="submit">View Races</button>
-            </a>
+        <div class="container">
+            {% if cart_items %}
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless half-border font">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col">Ticket Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in cart_items %}
+                    <tr>
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.ticket.name }}</strong></p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">£{{ item.ticket.price }}</p>
+                        </td>
+                        <td class="py-3 w-25">
+                            <p class="my-0">{{ item.quantity }}</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td colspan="4" class="pt-5 text-center">
+                            <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            <a href="{% url 'races' %}" class="btn btn-cart my-2 my-sm-0">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn btn-cart my-2 my-sm-0">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            {% else %}
+            <div class="col font text-center mb-3">
+                <p>Your cart is empty.</p>
+                <a href="{% url 'races' %}">
+                    <button class="btn btn-cart my-2 my-sm-0" type="submit">View Races</button>
+                </a>
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </div>
 </div>
 {% endblock %}
