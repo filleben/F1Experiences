@@ -124,7 +124,7 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 ## Credits
 
 ### Content
-
+  - I followed [this tutorial](https://simpleisbetterthancomplex.com/tutorial/2016/08/03/how-to-paginate-with-django.html) to intergrate pagination into the project.
 
 ### Media
 
