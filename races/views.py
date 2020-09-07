@@ -1,13 +1,25 @@
 from django.shortcuts import render
 from .models import Race, Ticket
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
 def all_races(request):
-    races = Race.objects.all()
+    race_list = Race.objects.all()
+    page = request.GET.get('page', 1)
+
+    paginator = Paginator(race_list, 6)
+    try:
+        races = paginator.page(page)
+    except PageNotAnInteger:
+        races = paginator.page(1)
+    except EmptyPage:
+        races = paginator.page(paginator.num_pages)
+
     context = {
         'races': races,
     }
+
     return render(request, 'races/races.html', context)
 
 def race_details(request, race_id):
