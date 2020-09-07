@@ -43,14 +43,19 @@
                         <td class="py-3">
                             <p class="my-0">£{{ item.ticket.price }}</p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="py-3">
                             <p class="my-0">{{ item.quantity }}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="text-center">
+                            <h6><strong><a href="{% url 'remove_item' item.id %}" class="btn btn-cart my-2 my-sm-0 text-uppercase">Remove</a></strong></h6>
                         </td>
                     </tr>
                     {% endfor %}
                     <tr>
                         <td colspan="4" class="pt-5 text-center">
-                            <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h5><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h5>
                         </td>
                     </tr>
                     <tr>
