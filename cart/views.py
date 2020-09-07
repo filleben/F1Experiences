@@ -16,3 +16,15 @@ def add_to_cart(request, id):
     request.session['cart'] = cart
     print(request.session['cart'])
     return redirect(reverse('view_cart'))
+
+def remove_item(request, id):
+    cart = request.session.get('cart', {})
+    quantity = cart[id] - 1
+
+    if quantity > 0:
+        cart[id] = quantity
+    else:
+        cart.pop(id)
+    request.session['cart'] = cart
+    
+    return redirect(reverse('view_cart'))
