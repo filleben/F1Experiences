@@ -117,7 +117,7 @@ header {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-  }
+}
 
 header video {
     position: absolute;
@@ -132,6 +132,13 @@ header video {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-20%);
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #FF0000;
+    border-color: #d3d3d3;
 }
 
 @media(max-width: 450px) {
