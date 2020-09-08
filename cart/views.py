@@ -14,7 +14,7 @@ def add_to_cart(request, id):
     else:
         cart[id] = cart.get(id, quantity)
     request.session['cart'] = cart
-    print(request.session['cart'])
+    
     return redirect(reverse('view_cart'))
 
 def remove_item(request, id):
