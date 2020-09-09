@@ -1,6 +1,7 @@
-from django.test import TestCase, Client
-from django.urls import reverse
+from django.test import TestCase, SimpleTestCase, Client
+from django.urls import reverse, resolve
 from races.models import Race, Ticket
+from races.views import all_races, race_details
 
 class TestViews(TestCase):
     """
@@ -40,3 +41,20 @@ class TestViews(TestCase):
         response = client.get(reverse('race_detail', args=[id]))
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'races/race_details.html')
+
+class TestURLs(SimpleTestCase):
+    def test_all_races_URL(self):
+        """
+        Testing races URL
+        """
+        url = reverse('races')
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, all_races)
+
+    def test_race_details_URL(self):
+        """
+        Testing race details URL
+        """
+        url = reverse('race_detail', args=[1])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, race_details)
