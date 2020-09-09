@@ -18,6 +18,9 @@ class Order(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
+    def _generate_order_number(self):
+        return uuid.uuid4().hex.upper()
+
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     ticket = models.ForeignKey(Ticket, null=False, blank=False, on_delete=models.CASCADE)
