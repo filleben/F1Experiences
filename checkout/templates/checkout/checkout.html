@@ -23,8 +23,42 @@
         </div>
     </div>
     <div class="row">
-        <div class="container">
-            
+        <div class="container font">
+            <form action="{% url 'checkout' %}" method="POST" id="checkout-form">
+                {% csrf_token %}
+                <fieldset class="rounded px-3 mb-5 half-border">
+                    <legend class="fieldset-label w-auto">Personal Details:</legend>
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                    {{ order_form.phone_number | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded px-3 mb-5 half-border">
+                    <legend class="fieldset-label w-auto">Home Address:</legend>
+                    {{ order_form.street_address1 | as_crispy_field }}
+                    {{ order_form.street_address2 | as_crispy_field }}
+                    {{ order_form.town_or_city | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded px-3 mb-5 half-border">
+                    <legend class="fieldset-label w-auto">Payment Information:</legend>
+                </fieldset>
+                <div class="text-center mb-5">
+                    <a href="{% url 'view_cart' %}" class="btn btn-cart my-2 my-sm-0">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Adjust Cart</span>
+                    </a>
+                    <a href="" class="btn btn-cart my-2 my-sm-0">
+                        <span class="text-uppercase">Order</span>
+                        <span class="icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </a>
+                </div>
+            </form>
         </div>
     </div>
 </div>
