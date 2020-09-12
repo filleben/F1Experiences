@@ -24,16 +24,49 @@
     </div>
     <div class="row">
         <div class="container font">
+            <div class="table-responsive rounded">
+                <div class="table-responsive rounded mb-5 ml-2 w-auto">
+                    <p class="text-left ml-2 order-sum">Order Summary:</p>
+                    <table class="table table-sm table-borderless half-border font">
+                        <thead class="text-black">
+                            <tr>
+                                <th scope="col">Ticket Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                            </tr>
+                        </thead>
+
+                        {% for item in cart_items %}
+                        <tr>
+                            <td class="py-3">
+                                <p class="my-0"><strong>{{ item.ticket.name }}</strong></p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">£{{ item.ticket.price }}</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">{{ item.quantity }}</p>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="4" class="pt-5 text-center">
+                                <h5><strong>Order Total: £{{ total|floatformat:2 }}</strong></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <form action="{% url 'checkout' %}" method="POST" id="checkout-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5 half-border">
-                    <legend class="fieldset-label w-auto">Personal Details:</legend>
+                    <legend class="fieldset-label w-auto mb-3">Personal Details:</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                     {{ order_form.phone_number | as_crispy_field }}
                 </fieldset>
                 <fieldset class="rounded px-3 mb-5 half-border">
-                    <legend class="fieldset-label w-auto">Home Address:</legend>
+                    <legend class="fieldset-label w-auto mb-3">Home Address:</legend>
                     {{ order_form.street_address1 | as_crispy_field }}
                     {{ order_form.street_address2 | as_crispy_field }}
                     {{ order_form.town_or_city | as_crispy_field }}
@@ -42,7 +75,7 @@
                     {{ order_form.postcode | as_crispy_field }}
                 </fieldset>
                 <fieldset class="rounded px-3 mb-5 half-border">
-                    <legend class="fieldset-label w-auto">Payment Information:</legend>
+                    <legend class="fieldset-label w-auto mb-3">Payment Information:</legend>
                 </fieldset>
                 <div class="text-center mb-5">
                     <a href="{% url 'view_cart' %}" class="btn btn-cart my-2 my-sm-0">
@@ -62,4 +95,5 @@
         </div>
     </div>
 </div>
+
 {% endblock %}
