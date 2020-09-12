@@ -141,6 +141,10 @@ header video {
     border-color: #d3d3d3;
 }
 
+.order-sum {
+    font-size: 1.5rem;
+}
+
 @media(max-width: 450px) {
     .title {
         font-size: 43px;
