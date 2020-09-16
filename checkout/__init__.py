@@ -1,0 +1,1 @@
+defualt_app_config = 'checkout.app.CheckoutConfig'
