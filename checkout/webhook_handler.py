@@ -49,7 +49,6 @@ class StripeWebhook_Handler:
                     town_or_city__iexact=billing_details.address.city,
                     county__iexact=billing_details.address.state,
                     country__iexact=billing_details.address.country,
-                    postcode__iexact=billing_details.address.postal_code,
                     order_total=order_total,
                     original_cart=cart,
                     stripe_pid=pid,
@@ -76,7 +75,6 @@ class StripeWebhook_Handler:
                     town_or_city=billing_details.address.city,
                     county=billing_details.address.state,
                     country=billing_details.address.country,
-                    postcode=billing_details.address.postal_code,
                     original_cart=cart,
                     stripe_pid=pid,
                 )
