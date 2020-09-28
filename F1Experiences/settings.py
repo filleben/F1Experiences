@@ -32,7 +32,8 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '08d595d5c555.ngrok.io',
+    '9414e3ee2d2e.ngrok.io',
+    '127.0.0.1',
 ]
 
 
