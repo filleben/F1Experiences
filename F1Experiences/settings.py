@@ -32,7 +32,7 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '9414e3ee2d2e.ngrok.io',
+    'dfba8d390bb8.ngrok.io',
     '127.0.0.1',
 ]
 
@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -177,3 +178,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Email settings
+DEFAULT_FROM_EMAIL = 'orders@F1Experiences.com'
+DEFAULT_CONTACT_NUMBER = '0123456789'
