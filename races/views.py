@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Race, Ticket
+from .forms import RaceForm, TicketForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
@@ -38,3 +39,19 @@ def race_details(request, race_id):
         'tickets': tickets,
     }
     return render(request, 'races/race_details.html', context)
+
+def add_race(request):
+    form = RaceForm()
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'races/add_race.html', context)
+
+def add_ticket(request):
+    form = TicketForm()
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'races/add_ticket.html', context)
