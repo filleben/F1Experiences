@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
 from .models import Race, Ticket
 from .forms import RaceForm, TicketForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -41,7 +42,16 @@ def race_details(request, race_id):
     return render(request, 'races/race_details.html', context)
 
 def add_race(request):
-    form = RaceForm()
+    if request.method == 'POST':
+        form = RaceForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added new race event!')
+            return redirect(reverse('add_race'))
+        else:
+            messages.error(request, 'Error adding race event, please check your form and try again.')
+    else:
+        form = RaceForm()
     context = {
         'form': form,
     }
@@ -49,7 +59,16 @@ def add_race(request):
     return render(request, 'races/add_race.html', context)
 
 def add_ticket(request):
-    form = TicketForm()
+    if request.method == 'POST':
+        form = TicketForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added new ticket!')
+            return redirect(reverse('add_ticket'))
+        else:
+            messages.error(request, 'Error adding ticket, please check your form and try again.')
+    else:
+        form = TicketForm()
     context = {
         'form': form,
     }
