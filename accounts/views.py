@@ -12,8 +12,11 @@ def profile(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile Updated')
+        else:
+             messages.error(request, 'Error updating profile, please check your form and try again.')
+    else:
+        form = UserProfileForm(instance=profile)
 
-    form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
     context = {
         'profile': profile,
