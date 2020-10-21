@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from .models import Race, Ticket
 from .forms import RaceForm, TicketForm
@@ -74,3 +74,22 @@ def add_ticket(request):
     }
 
     return render(request, 'races/add_ticket.html', context)
+
+def edit_race(request, race_id):
+    race = get_object_or_404(Race, pk=race_id)
+    if request.method == 'POST':
+        form = RaceForm(request.POST, request.FILES, instance=race)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated race event!')
+            return redirect(reverse('race_detail', args=[race.id]))
+        else:
+            messages.error(request, 'Error editing race event, please check your form and try again.')
+    else:
+        form = RaceForm(instance=race)
+    context = {
+        'form': form,
+        'race': race,
+    }
+
+    return render(request, 'races/edit_race.html', context)
