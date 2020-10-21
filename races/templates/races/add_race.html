@@ -25,7 +25,9 @@
     <div class="row">
         <div class="container font half-border mb-3">
             <div class="text-center mb-3">
-                <p>Looking to add a new ticket to a race event? <a href="{% url 'add_ticket' %}">Add Ticket</a></p>
+                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'edit_race' %}">Edit Race</a>
+                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'add_ticket' %}">Add Ticket</a>
+                <a class="btn btn-cart my-2 my-sm-0" href="">Edit Ticket</a>
             </div>
             <form method="POST" action="{% url 'add_race' %}" class="form" enctype="multipart/form-data">
                 {% csrf_token %}
