@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="col-12 hero-image">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+                <h1 class="display-4 font-bold text-white title title-small">FIA Formula One World Championship</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3 mb-3">
+                <p class="font location-text"><a href="{% url 'home' %}">Home</a> / Add Race</p>
+                <h1 class="font">Edit Race</h1>
+                <hr class="w-100 mb-1">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container font half-border mb-3">
+            <div class="text-center mb-3">
+                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'add_race' %}">Add Race</a>
+                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'add_ticket' %}">Add Ticket</a>
+                <a class="btn btn-cart my-2 my-sm-0" href="">Edit Ticket</a>
+            </div>
+            <form method="POST" action="{% url 'edit_race' race.id %}" class="form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-center mb-3">
+                    <a class="btn btn-cart my-2 my-sm-0" href="{% url 'races' %}">Back</a>
+                    <button class="btn btn-cart my-2 my-sm-0" type="submit">Edit Race</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
