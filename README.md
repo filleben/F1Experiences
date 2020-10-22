@@ -41,6 +41,10 @@ I expect that the majority of the users will fall into the following criteria:
 - As a user, I want to be able to create an account to view and manage my orders.
 - As a user, I want to be able to edit and remove items from my cart while shopping.
 - As a user, I want to be able to pay for tickets using card payment.
+- As a user, I want to be able to search for events.
+- As a site manager, I want to be able to add and remove race events.
+- As a site manager, I want to be able to add and remove tickets for each race event.
+- As a site manager, I want to be able to edit tickets and race events.
 
 ### Wireframes
 
