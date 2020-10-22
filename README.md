@@ -54,6 +54,9 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 ### Design Choices
 
+- **Font**: I wanted the project to look as professional as possible so decided to use a copy of the official Formula One font sourced from [Here](https://www.ffonts.net/Formula1-Display-Regular.font.download).
+
+- **Colours**: I wanted the project to look like a product from Formula One so with this in mind I used the same colour scheme used on the [Official Site](https://www.formula1.com/). I used white (Hex: '#ffffff' RGB: 'rgb(255, 255, 255)') as the background and navbar font colour, red (Hex: '#ff0000' RGB: 'rgb(255, 0, 0)') for the navbar and borders and then black (Hex: '#000000' RGB: 'rgb(0, 0, 0)') for the body text.
 
 <span id="features"></span>
 
