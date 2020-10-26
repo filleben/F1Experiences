@@ -10,3 +10,6 @@ def popular_races(request):
         'races': races,
     }
     return render(request, 'home/index.html', context)
+
+def handler_404(request, exception):
+    return render(request, '404.html')

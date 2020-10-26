@@ -28,3 +28,5 @@ urlpatterns = [
     path('checkout/', include("checkout.urls")),
     path('users/', include("accounts.urls")),
 ]
+
+handler404 = 'home.views.handler_404'
