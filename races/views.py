@@ -41,6 +41,13 @@ def race_details(request, race_id):
     }
     return render(request, 'races/race_details.html', context)
 
+def event_management(request):
+    races = Race.objects.all()
+    context = {
+        'races': races,
+    }
+    return render(request, 'races/event_management.html', context)
+
 def add_race(request):
     if request.method == 'POST':
         form = RaceForm(request.POST, request.FILES)
