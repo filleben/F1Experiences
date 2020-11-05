@@ -27,6 +27,7 @@ urlpatterns = [
     path('cart/', include("cart.urls")),
     path('checkout/', include("checkout.urls")),
     path('users/', include("accounts.urls")),
+    path('contact/', include("contact.urls")),
 ]
 
 handler404 = 'home.views.handler_404'
