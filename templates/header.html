@@ -18,7 +18,7 @@
         <a class="nav-link text-white hvr-sweep-to-right mr-2" href="{% url 'races' %}">Races</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white hvr-sweep-to-right mr-2" href="#">Contact Us</a>
+        <a class="nav-link text-white hvr-sweep-to-right mr-2" href="{% url 'contact' %}">Contact Us</a>
       </li>
     </ul>
     <div>
@@ -33,8 +33,8 @@
           <div class="dropdown-menu dropdown-menu-lg-right border-0 text-center" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a href="{% url 'add_race' %}" class="dropdown-item">Event Management</a>
-              <a href="{% url 'add_ticket' %}" class="dropdown-item">Ticket Management</a>
+              <a href="{% url 'event_management' %}" class="dropdown-item">Event Management</a>
+              <a href="{% url 'ticket_management' %}" class="dropdown-item">Ticket Management</a>
               {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
