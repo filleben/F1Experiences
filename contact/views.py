@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from .models import Contact
 from .forms import ContactForm
 
@@ -20,7 +20,7 @@ def contact(request):
             contact = contact_form.save(commit=False)
             contact.save()
 
-            #return redirect(reverse('contact_success')
+            return redirect(reverse('contact_success', args=[contact.contact_number]))
 
         else:
             messages.error(request, "Sorry there was a problem, please check the information you have provided")
@@ -33,3 +33,10 @@ def contact(request):
     }
 
     return render(request, 'contact/contact_page.html', context)
+
+def contact_success(request, contact_number):
+    contact = get_object_or_404(Contact, contact_number=contact_number)
+    context = {
+        'contact': contact,
+    }
+    return render(request, 'contact/contact_success.html', context)
