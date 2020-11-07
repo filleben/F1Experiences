@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="col-12 hero-image">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-sm-12 my-auto">
+                <h1 class="display-4 font-bold text-white title title-small">FIA Formula One World Championship</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3 mb-3">
+                <p class="font location-text"><a href="{% url 'home' %}">Home</a> / Contact</p>
+                <h1 class="font">Contact Us</h1>
+                <hr class="w-100 mb-1">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container font">
+            <form action="{% url 'contact' %}" method="POST" id="contact-form">
+                {% csrf_token %}
+                <fieldset class="rounded px-3 mb-5 half-border">
+                    {{ contact_form.first_name | as_crispy_field }}
+                    {{ contact_form.last_name | as_crispy_field }}
+                    {{ contact_form.contact_email | as_crispy_field }}
+                    {{ contact_form.contact_phone | as_crispy_field }}
+                    {{ contact_form.subject | as_crispy_field }}
+                    {{ contact_form.message | as_crispy_field }}
+                </fieldset>
+                <div class="text-center mb-5">
+                    <a href="{% url 'home' %}" class="btn btn-cart my-2 my-sm-0">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Back</span>
+                    </a>
+                    <button id='contact-button' class="btn btn-cart my-2 my-sm-0">
+                        <span class="text-uppercase">Send</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
