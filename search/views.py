@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from races.models import Race
+from races.models import Race, Ticket
 
 # Create your views here.
 
@@ -10,3 +10,11 @@ def search(request):
             'races': races
         }
         return render(request, 'races/races.html', context)
+
+def ticket_search(request):
+    if request.method == "GET":
+        tickets = Ticket.objects.filter(name__icontains=request.GET['q'])
+        context = {
+            'tickets': tickets
+        }
+        return render(request, 'races/ticket_management.html', context)
