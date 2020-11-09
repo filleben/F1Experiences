@@ -62,6 +62,19 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 ## Features
 
+- **Navigation bar**: Allows the user to navigate to all the pages of the site, consistent throughout the site.
+- **User Registration**: Users can create a account by providing a valid email address, username and password.
+- **User Authentication**: Users can login to their accounts by providing the correct username and password combination.
+- **Password Reset**: Users can reset their password if forgotten.
+- **Most Popular Events**: The 4 most popular events are featured on the home page.
+- **Testimonials**: 4 different user testimonials are featured on the home page.
+- **Contact Page**: User can get in touch using the contact form on the contact page.
+- **Event Page**: A full list of race events, split into pages with 6 events per page.
+- **Event Search**: Users can search for specfic events.
+- **Event Details**: Each race event has a details page showing the avaiable tickets and circuit map for each event.
+- **Cart**: Users can add, view and adjust tickets in their cart.
+- **Checkout**: Users can purchase tickets in there cart using the checkout app. If users are logged in the checkout form will be prefilled with existing information when avaiable.
+- **404 Page**: Provides users with a message if they have entered an incorrect URL or clicked an incorrect link, gives the user the option to return to the home page.
 
 ### Features Left to Implement
 
