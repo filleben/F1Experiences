@@ -22,24 +22,17 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="container font half-border mb-3">
+    <div class="container font half-border mb-3">
+        {% for ticket in tickets %}
+        <form method="POST" action="{% url 'edit_ticket' ticket.id %}" class="form" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form | crispy }}
             <div class="text-center mb-3">
-                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'add_race' %}">Add Race</a>
-                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'add_ticket' %}">Add Ticket</a>
-                <a class="btn btn-cart my-2 my-sm-0" href="">Edit Ticket</a>
+                <a class="btn btn-cart my-2 my-sm-0" href="{% url 'races' %}">Back</a>
+                <button class="btn btn-cart my-2 my-sm-0" type="submit">Edit Ticket</button>
             </div>
-            {% for ticket in tickets %}
-            <form method="POST" action="{% url 'edit_ticket' race.id %}" class="form" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form | crispy }}
-                <div class="text-center mb-3">
-                    <a class="btn btn-cart my-2 my-sm-0" href="{% url 'races' %}">Back</a>
-                    <button class="btn btn-cart my-2 my-sm-0" type="submit">Edit Ticket</button>
-                </div>
-            </form>
-            {% endfor %}
-        </div>
+        </form>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
