@@ -48,6 +48,13 @@ def event_management(request):
     }
     return render(request, 'races/event_management.html', context)
 
+def ticket_management(request):
+    tickets = Ticket.objects.all()
+    context = {
+        'tickets': tickets,
+    }
+    return render(request, 'races/ticket_management.html', context)
+
 def add_race(request):
     if request.method == 'POST':
         form = RaceForm(request.POST, request.FILES)
@@ -101,22 +108,20 @@ def edit_race(request, race_id):
 
     return render(request, 'races/edit_race.html', context)
 
-def edit_ticket(request, race_id):
-    race = get_object_or_404(Race, id=race_id)
-    tickets = Ticket.objects.filter(race_id=race_id)
+def edit_ticket(request, ticket_id):
+    tickets = Ticket.objects.filter(id=ticket_id)
     if request.method == 'POST':
         form = TicketForm(request.POST, request.FILES, instance=tickets)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added new ticket!')
-            return redirect(reverse('race_detail', args=[race.id]))
+            return redirect(reverse('ticket_management'))
         else:
             messages.error(request, 'Error adding ticket, please check your form and try again.')
     else:
         form = TicketForm(instance=tickets)
     context = {
         'form': form,
-        'race': race,
         'tickets': tickets,
     }
 
