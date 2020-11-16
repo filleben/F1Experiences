@@ -108,6 +108,12 @@ def edit_race(request, race_id):
 
     return render(request, 'races/edit_race.html', context)
 
+def delete_race(request, race_id):
+    race = get_object_or_404(Race, pk=race_id)
+    race.delete()
+    messages.success(request, 'Successfully deleted race event!')
+    return redirect(reverse('event_management'))
+
 def edit_ticket(request, ticket_id):
     tickets = Ticket.objects.filter(id=ticket_id)
     if request.method == 'POST':
