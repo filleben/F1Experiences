@@ -183,6 +183,10 @@ header video {
     height: 2px;
 }
 
+.top-padding {
+    padding-top: 100px;
+}
+
 @media(max-width: 450px) {
     .title {
         font-size: 43px;
