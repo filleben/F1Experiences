@@ -23,7 +23,6 @@
         </div>
     </div>
     <div class="container font half-border mb-3">
-        {% for ticket in tickets %}
         <form method="POST" action="{% url 'edit_ticket' ticket.id %}" class="form" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form | crispy }}
@@ -32,7 +31,6 @@
                 <button class="btn btn-cart my-2 my-sm-0" type="submit">Edit Ticket</button>
             </div>
         </form>
-        {% endfor %}
     </div>
 </div>
 {% endblock %}
