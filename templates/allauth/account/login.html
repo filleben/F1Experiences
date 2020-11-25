@@ -1,6 +1,7 @@
 {% extends "account/base.html" %}
 
 {% load i18n %}
+{% load static %}
 {% load account socialaccount %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
@@ -17,13 +18,11 @@
   of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
   for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
-<div class="socialaccount_ballot">
+<div class="socialaccount_ballot pb-3">
 
-  <ul class="socialaccount_providers">
-    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-  </ul>
+  <a href="{% provider_login_url "google" method="js_sdk" %}"><img src="{% static 'images/btn_google_signin_dark_normal_web.png' %}"></a>
 
-  <div class="login-or">{% trans 'or' %}</div>
+  <div class="login-or pt-3">{% trans 'or' %}</div>
 
 </div>
 
