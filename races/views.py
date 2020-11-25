@@ -132,3 +132,9 @@ def edit_ticket(request, ticket_id):
     }
 
     return render(request, 'races/edit_ticket.html', context)
+
+def delete_ticket(request, ticket_id):
+    tickets = Ticket.objects.filter(id=ticket_id)
+    ticket.delete()
+    messages.success(request, 'Successfully deleted ticket!')
+    return redirect(reverse('ticket_management'))
