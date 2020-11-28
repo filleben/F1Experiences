@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Race, Ticket
 from .forms import RaceForm, TicketForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -41,21 +42,36 @@ def race_details(request, race_id):
     }
     return render(request, 'races/race_details.html', context)
 
+@login_required
 def event_management(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+    
     races = Race.objects.all()
     context = {
         'races': races,
     }
     return render(request, 'races/event_management.html', context)
 
+@login_required
 def ticket_management(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+    
     tickets = Ticket.objects.all()
     context = {
         'tickets': tickets,
     }
     return render(request, 'races/ticket_management.html', context)
 
+@login_required
 def add_race(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = RaceForm(request.POST, request.FILES)
         if form.is_valid():
@@ -72,7 +88,12 @@ def add_race(request):
 
     return render(request, 'races/add_race.html', context)
 
+@login_required
 def add_ticket(request):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = TicketForm(request.POST, request.FILES)
         if form.is_valid():
@@ -89,7 +110,12 @@ def add_ticket(request):
 
     return render(request, 'races/add_ticket.html', context)
 
+@login_required
 def edit_race(request, race_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
     race = get_object_or_404(Race, pk=race_id)
     if request.method == 'POST':
         form = RaceForm(request.POST, request.FILES, instance=race)
@@ -108,13 +134,23 @@ def edit_race(request, race_id):
 
     return render(request, 'races/edit_race.html', context)
 
+@login_required
 def delete_race(request, race_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
     race = get_object_or_404(Race, pk=race_id)
     race.delete()
     messages.success(request, 'Successfully deleted race event!')
     return redirect(reverse('event_management'))
 
+@login_required
 def edit_ticket(request, ticket_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
     tickets = Ticket.objects.filter(id=ticket_id)
     if request.method == 'POST':
         form = TicketForm(request.POST, request.FILES, instance=tickets)
@@ -133,7 +169,12 @@ def edit_ticket(request, ticket_id):
 
     return render(request, 'races/edit_ticket.html', context)
 
+@login_required
 def delete_ticket(request, ticket_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+        
     tickets = Ticket.objects.filter(id=ticket_id)
     ticket.delete()
     messages.success(request, 'Successfully deleted ticket!')
