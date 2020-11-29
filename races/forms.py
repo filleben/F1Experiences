@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomClearableFileInput
 from .models import Race, Ticket
 
 class RaceForm(forms.ModelForm):
@@ -6,6 +7,9 @@ class RaceForm(forms.ModelForm):
     class Meta:
         model = Race
         fields = '__all__'
+
+    image = forms.ImageField(label='Circuit Map:', required=False, widget=CustomClearableFileInput)
+    flag = forms.ImageField(label='Flag:', required=False, widget=CustomClearableFileInput)
 
 class TicketForm(forms.ModelForm):
 
