@@ -6,7 +6,7 @@
             "name": "FORMULA 1 AUSTRALIAN GRAND PRIX 2020",
             "friendly_name": "Australian GP",
             "date": "13-15 March",
-            "image_url": "https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11216-F1-Experience-Australia-Event-Image-e6444dbc7f7a1dc7066d17312d186695.jpg",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-australian-grand-prix-seating-map-.jpg",
             "image": "Australia.jpg",
             "flag_url": "https://www.worldometers.info/img/flags/as-flag.gif",
             "flag": "AusFlag.jpg",
@@ -19,7 +19,12 @@
         "fields": {
             "name": "FORMULA 1 BAHRAIN GRAND PRIX 2020",
             "friendly_name": "Bahrain GP",
-            "date": "20-22 March"
+            "date": "20-22 March",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-bahrain-grand-prix-seating-map.jpg",
+            "image": "Bahrain.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/ba-flag.gif",
+            "flag": "BahFlag.jpg",
+            "location": "Sakhir, Bahrain"
         }
     },
     {
@@ -28,7 +33,12 @@
         "fields": {
             "name": "FORMULA 1 VIETNAM GRAND PRIX 2020",
             "friendly_name": "Vietnam GP",
-            "date": "3-5 April"
+            "date": "3-5 April",
+            "image_url": "https://gpdestinations.com/wp-content/uploads/2019/11/2020-vietnam-grand-prix-circuit-map.jpg",
+            "image": "Vietnam.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/vm-flag.gif",
+            "flag": "VieFlag.jpg",
+            "location": "Hanoi, Vietnam"
         }
     },
     {
@@ -37,7 +47,12 @@
         "fields": {
             "name": "FORMULA 1 CHINESE GRAND PRIX 2020",
             "friendly_name": "Chinese GP",
-            "date": "17-19 April"
+            "date": "17-19 April",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-chinese-grand-prix-seating-map.jpg",
+            "image": "China.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/ch-flag.gif",
+            "flag": "ChiFlag.jpg",
+            "location": "Shanghai, China"
         }
     },
     {
@@ -46,7 +61,12 @@
         "fields": {
             "name": "FORMULA 1 DUTCH GRAND PRIX 2020",
             "friendly_name": "Dutch GP",
-            "date": "1-3 May"
+            "date": "1-3 May",
+            "image_url": "https://gpdestinations.com/wp-content/uploads/2019/11/2020-Dutch-Grand-Prix-Circuit-Map.jpg",
+            "image": "Amsterdam.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/nl-flag.gif",
+            "flag": "NLFlag.jpg",
+            "location": "Zandvoort, Netherlands"
         }
     },
     {
@@ -55,7 +75,12 @@
         "fields": {
             "name": "FORMULA 1 GRAN PREMIO DE ESPAÑA 2020",
             "friendly_name": "Spanish GP",
-            "date": "8-10 May"
+            "date": "8-10 May",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-spanish-grand-prix-seating-map.jpg",
+            "image": "Spain.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/sp-flag.gif",
+            "flag": "SpnFlag.jpg",
+            "location": "Barcelona, Spain"
         }
     },
     {
@@ -64,7 +89,12 @@
         "fields": {
             "name": "FORMULA 1 GRAND PRIX DE MONACO 2020",
             "friendly_name": "Monaco GP",
-            "date": "21-24 May"
+            "date": "21-24 May",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-monaco-grand-prix-seating-map.jpg",
+            "image": "Monaco.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/mn-flag.gif",
+            "flag": "MonFlag.jpg",
+            "location": "Monte Carlo, Monaco"
         }
     },
     {
@@ -73,7 +103,12 @@
         "fields": {
             "name": "FORMULA 1 AZERBAIJAN GRAND PRIX 2020",
             "friendly_name": "Azerbaijan GP",
-            "date": "5-7 June"
+            "date": "5-7 June",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-azerbaijan-grand-prix-seating-map.jpg",
+            "image": "Azerbaijan.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/aj-flag.gif",
+            "flag": "AzeFlag.jpg",
+            "location": "Baku, Azerbaijan"
         }
     },
     {
@@ -81,8 +116,13 @@
         "model": "races.race",
         "fields": {
             "name": "FORMULA 1 GRAND PRIX DU CANADA 2020",
-            "friendly_name": "Candain GP",
-            "date": "12-14 June"
+            "friendly_name": "Candian GP",
+            "date": "12-14 June",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-canadian-grand-prix-seating-map.jpg",
+            "image": "Canada.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/ca-flag.gif",
+            "flag": "CaFlag.jpg",
+            "location": "Montréal, Canada"
         }
     },
     {
@@ -91,7 +131,12 @@
         "fields": {
             "name": "FORMULA 1 GRAND PRIX DE FRANCE 2020",
             "friendly_name": "French GP",
-            "date": "25-28 June"
+            "date": "25-28 June",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-French-Grand-Prix-seating-map-2.jpg",
+            "image": "France.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/fr-flag.gif",
+            "flag": "FraFlag.jpg",
+            "location": "Le Castellet, France"
         }
     },
     {
@@ -100,7 +145,12 @@
         "fields": {
             "name": "FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2020",
             "friendly_name": "Austrian GP",
-            "date": "3-5 July"
+            "date": "3-5 July",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2018-austrian-grand-prix-camping-red-bull-ring.gif",
+            "image": "Austria.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/au-flag.gif",
+            "flag": "AutFlag.jpg",
+            "location": "Spielberg, Austria"
         }
     },
     {
@@ -109,7 +159,12 @@
         "fields": {
             "name": "FORMULA 1 BRITISH GRAND PRIX 2020",
             "friendly_name": "British GP",
-            "date": "17-19 July"
+            "date": "17-19 July",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-British-Grand-Prix-seating-map.jpg",
+            "image": "British.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/uk-flag.gif",
+            "flag": "UKFlag.jpg",
+            "location": "Silverstone, England"
         }
     },
     {
@@ -118,7 +173,12 @@
         "fields": {
             "name": "FORMULA 1 MAGYAR NAGYDÍJ 2020",
             "friendly_name": "Hungarian GP",
-            "date": "31-2 July/August"
+            "date": "31-2 July/August",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-hungarian-grand-prix-seating-map.jpg",
+            "image": "Hungary.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/hu-flag.gif",
+            "flag": "HunFlag.jpg",
+            "location": "Budapest, Hungary"
         }
     },
     {
@@ -126,8 +186,13 @@
         "model": "races.race",
         "fields": {
             "name": "FORMULA 1 BELGIAN GRAND PRIX 2020",
-            "friendly_name": "Belgain GP",
-            "date": "28-30 August"
+            "friendly_name": "Belgian GP",
+            "date": "28-30 August",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-belgian-grand-prix-seating-map.jpg",
+            "image": "Belgium.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/be-flag.gif",
+            "flag": "BelFlag.jpg",
+            "location": "Spa-Francorchamps, Belgium"
         }
     },
     {
@@ -136,7 +201,12 @@
         "fields": {
             "name": "FORMULA 1 GRAN PREMIO D’ITALIA 2020",
             "friendly_name": "Italian GP",
-            "date": "4-6 August"
+            "date": "4-6 August",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-Italian-Grand-Prix-seating-map.jpg",
+            "image": "Italy.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/it-flag.gif",
+            "flag": "ItaFlag.jpg",
+            "location": "Monza, Italy"
         }
     },
     {
@@ -145,7 +215,12 @@
         "fields": {
             "name": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2020",
             "friendly_name": "Singapore GP",
-            "date": "18-20 September"
+            "date": "18-20 September",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-singapore-grand-prix-seating-map.jpg",
+            "image": "Singapore.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/sn-flag.gif",
+            "flag": "SigFlag.jpg",
+            "location": "Marina Bay, Singapore"
         }
     },
     {
@@ -154,7 +229,12 @@
         "fields": {
             "name": "FORMULA 1 RUSSIAN GRAND PRIX 2020",
             "friendly_name": "Russian GP",
-            "date": "25-27 September"
+            "date": "25-27 September",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-russian-grand-prix-seating-map.jpg",
+            "image": "Russia.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/rs-flag.gif",
+            "flag": "RusFlag.jpg",
+            "location": "Sochi, Russia"
         }
     },
     {
@@ -163,7 +243,12 @@
         "fields": {
             "name": "FORMULA 1 JAPANESE GRAND PRIX 2020",
             "friendly_name": "Japanese GP",
-            "date": "9-11 October"
+            "date": "9-11 October",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-japanese-grand-prix-seating-map.jpg",
+            "image": "Japan.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/ja-flag.gif",
+            "flag": "JapFlag.jpg",
+            "location": "Suzuka, Japan"
         }
     },
     {
@@ -172,7 +257,12 @@
         "fields": {
             "name": "FORMULA 1 UNITED STATES GRAND PRIX 2020",
             "friendly_name": "United States GP",
-            "date": "23-25 October"
+            "date": "23-25 October",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-united-states-grand-prix-seating-map.jpg",
+            "image": "United-States.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/us-flag.gif",
+            "flag": "UsaFlag.jpg",
+            "location": "Austin, Texas"
         }
     },
     {
@@ -181,7 +271,12 @@
         "fields": {
             "name": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2020",
             "friendly_name": "Mexican GP",
-            "date": "30-1 October/November"
+            "date": "30-1 October/November",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-mexico-grand-prix-seating-map.jpg",
+            "image": "Mexico.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/mx-flag.gif",
+            "flag": "MexFlag.jpg",
+            "location": "Mexico City, Mexico"
         }
     },
     {
@@ -190,7 +285,12 @@
         "fields": {
             "name": "FORMULA 1 BRAZILIAN GRAND PRIX 2020",
             "friendly_name": "Brazilian GP",
-            "date": "13-15 November"
+            "date": "13-15 November",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-brazilian-grand-prix-seating-map.jpg",
+            "image": "Brazil.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/br-flag.gif",
+            "flag": "BraFlag.jpg",
+            "location": "São Paulo"
         }
     },
     {
@@ -199,7 +299,12 @@
         "fields": {
             "name": "FORMULA 1 ABU DHABI GRAND PRIX 2020",
             "friendly_name": "Abu Dhabi GP",
-            "date": "27-29 November"
+            "date": "27-29 November",
+            "image_url": "https://gpdestinations.com//wp-content/uploads/2019/01/2019-abu-dhabi-grand-prix-seating-map.jpg",
+            "image": "Abu-Dhabi.jpg",
+            "flag_url": "https://www.worldometers.info/img/flags/ae-flag.gif",
+            "flag": "AbuFlag.jpg",
+            "location": "Yas Island, Abu Dhabi"
         }
     }
 ]

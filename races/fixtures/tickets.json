@@ -5,7 +5,7 @@
         "fields": {
             "race": 1,
             "name": "Australian GP Champions Club",
-            "description": "Witness the 2021 Australian Grand Prix at Albert Park in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "description": "Witness the 2020 Australian Grand Prix at Albert Park in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
             "price": 1500.00
         }
     },
@@ -17,6 +17,646 @@
             "name": "Australian GP Grandstand Seating",
             "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
             "price": 300.00
+        }
+    },
+    {
+        "pk": 3,
+        "model": "races.ticket",
+        "fields": {
+            "race": 1,
+            "name": "Australian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 4,
+        "model": "races.ticket",
+        "fields": {
+            "race": 2,
+            "name": "Bahrain GP Champions Club",
+            "description": "Witness the 2020 Bahrain Grand Prix at Sakhir in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 5,
+        "model": "races.ticket",
+        "fields": {
+            "race": 2,
+            "name": "Bahrain GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 6,
+        "model": "races.ticket",
+        "fields": {
+            "race": 2,
+            "name": "Bahrain GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 7,
+        "model": "races.ticket",
+        "fields": {
+            "race": 3,
+            "name": "Vietnam GP Champions Club",
+            "description": "Witness the 2020 Vietnam Grand Prix at Hanoi in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 8,
+        "model": "races.ticket",
+        "fields": {
+            "race": 3,
+            "name": "Vietnam GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 9,
+        "model": "races.ticket",
+        "fields": {
+            "race": 3,
+            "name": "Vietnam GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 10,
+        "model": "races.ticket",
+        "fields": {
+            "race": 4,
+            "name": "Chinese GP Champions Club",
+            "description": "Witness the 2020 Chinese Grand Prix at Shanghai in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 11,
+        "model": "races.ticket",
+        "fields": {
+            "race": 4,
+            "name": "Chinese GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 12,
+        "model": "races.ticket",
+        "fields": {
+            "race": 4,
+            "name": "Chinese GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 13,
+        "model": "races.ticket",
+        "fields": {
+            "race": 5,
+            "name": "Dutch GP Champions Club",
+            "description": "Witness the 2020 Dutch Grand Prix at Zandvoort in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 14,
+        "model": "races.ticket",
+        "fields": {
+            "race": 5,
+            "name": "Dutch GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 15,
+        "model": "races.ticket",
+        "fields": {
+            "race": 5,
+            "name": "Dutch GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 16,
+        "model": "races.ticket",
+        "fields": {
+            "race": 6,
+            "name": "Spanish GP Champions Club",
+            "description": "Witness the 2020 Spanish Grand Prix at Barcelona in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 17,
+        "model": "races.ticket",
+        "fields": {
+            "race": 6,
+            "name": "Spanish GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 18,
+        "model": "races.ticket",
+        "fields": {
+            "race": 6,
+            "name": "Spanish GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 19,
+        "model": "races.ticket",
+        "fields": {
+            "race": 7,
+            "name": "Monaco GP Champions Club",
+            "description": "Witness the 2020 Monaco Grand Prix at Monte Carlo in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 20,
+        "model": "races.ticket",
+        "fields": {
+            "race": 7,
+            "name": "Monaco GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 21,
+        "model": "races.ticket",
+        "fields": {
+            "race": 7,
+            "name": "Monaco GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 22,
+        "model": "races.ticket",
+        "fields": {
+            "race": 8,
+            "name": "Azerbaijan GP Champions Club",
+            "description": "Witness the 2020 Azerbaijan Grand Prix at Baku in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 23,
+        "model": "races.ticket",
+        "fields": {
+            "race": 8,
+            "name": "Azerbaijan GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 24,
+        "model": "races.ticket",
+        "fields": {
+            "race": 8,
+            "name": "Azerbaijan GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 25,
+        "model": "races.ticket",
+        "fields": {
+            "race": 9,
+            "name": "Candian GP Champions Club",
+            "description": "Witness the 2020 Candian Grand Prix at Montréal in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 26,
+        "model": "races.ticket",
+        "fields": {
+            "race": 9,
+            "name": "Candian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 27,
+        "model": "races.ticket",
+        "fields": {
+            "race": 9,
+            "name": "Candian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 28,
+        "model": "races.ticket",
+        "fields": {
+            "race": 10,
+            "name": "French GP Champions Club",
+            "description": "Witness the 2020 French Grand Prix at Le Castellet in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 29,
+        "model": "races.ticket",
+        "fields": {
+            "race": 10,
+            "name": "French GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 30,
+        "model": "races.ticket",
+        "fields": {
+            "race": 10,
+            "name": "French GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 31,
+        "model": "races.ticket",
+        "fields": {
+            "race": 11,
+            "name": "Austrian GP Champions Club",
+            "description": "Witness the 2020 Austrian Grand Prix at Spielberg in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 32,
+        "model": "races.ticket",
+        "fields": {
+            "race": 11,
+            "name": "Austrian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 33,
+        "model": "races.ticket",
+        "fields": {
+            "race": 11,
+            "name": "Austrian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 34,
+        "model": "races.ticket",
+        "fields": {
+            "race": 12,
+            "name": "British GP Champions Club",
+            "description": "Witness the 2020 British Grand Prix at Silverstone in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 35,
+        "model": "races.ticket",
+        "fields": {
+            "race": 12,
+            "name": "British GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 36,
+        "model": "races.ticket",
+        "fields": {
+            "race": 12,
+            "name": "British GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 37,
+        "model": "races.ticket",
+        "fields": {
+            "race": 13,
+            "name": "Hungarian GP Champions Club",
+            "description": "Witness the 2020 Hungarian Grand Prix at Budapest in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 38,
+        "model": "races.ticket",
+        "fields": {
+            "race": 13,
+            "name": "Hungarian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 39,
+        "model": "races.ticket",
+        "fields": {
+            "race": 13,
+            "name": "Hungarian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 40,
+        "model": "races.ticket",
+        "fields": {
+            "race": 14,
+            "name": "Belgian GP Champions Club",
+            "description": "Witness the 2020 Belgian Grand Prix at Spa-Francorchamps in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 41,
+        "model": "races.ticket",
+        "fields": {
+            "race": 14,
+            "name": "Belgian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 42,
+        "model": "races.ticket",
+        "fields": {
+            "race": 14,
+            "name": "Belgian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 43,
+        "model": "races.ticket",
+        "fields": {
+            "race": 15,
+            "name": "Italian GP Champions Club",
+            "description": "Witness the 2020 Italian Grand Prix at Monza in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 44,
+        "model": "races.ticket",
+        "fields": {
+            "race": 15,
+            "name": "Italian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 45,
+        "model": "races.ticket",
+        "fields": {
+            "race": 15,
+            "name": "Italian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 46,
+        "model": "races.ticket",
+        "fields": {
+            "race": 16,
+            "name": "Singapore GP Champions Club",
+            "description": "Witness the 2020 Singapore Grand Prix at Marina Bay in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 47,
+        "model": "races.ticket",
+        "fields": {
+            "race": 16,
+            "name": "Singapore GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 48,
+        "model": "races.ticket",
+        "fields": {
+            "race": 16,
+            "name": "Singapore GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 49,
+        "model": "races.ticket",
+        "fields": {
+            "race": 17,
+            "name": "Russian GP Champions Club",
+            "description": "Witness the 2020 Russian Grand Prix at Sochi in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 50,
+        "model": "races.ticket",
+        "fields": {
+            "race": 17,
+            "name": "Russian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 51,
+        "model": "races.ticket",
+        "fields": {
+            "race": 17,
+            "name": "Russian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 52,
+        "model": "races.ticket",
+        "fields": {
+            "race": 18,
+            "name": "Japanese GP Champions Club",
+            "description": "Witness the 2020 Japanese Grand Prix at Suzuka in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 53,
+        "model": "races.ticket",
+        "fields": {
+            "race": 18,
+            "name": "Japanese GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 54,
+        "model": "races.ticket",
+        "fields": {
+            "race": 18,
+            "name": "Japanese GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 55,
+        "model": "races.ticket",
+        "fields": {
+            "race": 19,
+            "name": "United States GP Champions Club",
+            "description": "Witness the 2020 US Grand Prix at Austin in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 56,
+        "model": "races.ticket",
+        "fields": {
+            "race": 19,
+            "name": "United States GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 57,
+        "model": "races.ticket",
+        "fields": {
+            "race": 19,
+            "name": "United States GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 58,
+        "model": "races.ticket",
+        "fields": {
+            "race": 20,
+            "name": "Mexican GP Champions Club",
+            "description": "Witness the 2020 Mexican Grand Prix at Mexico City in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 59,
+        "model": "races.ticket",
+        "fields": {
+            "race": 20,
+            "name": "Mexican GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 60,
+        "model": "races.ticket",
+        "fields": {
+            "race": 20,
+            "name": "Mexican GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 61,
+        "model": "races.ticket",
+        "fields": {
+            "race": 21,
+            "name": "Brazilian GP Champions Club",
+            "description": "Witness the 2020 Brazilian Grand Prix at São Paulo in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 62,
+        "model": "races.ticket",
+        "fields": {
+            "race": 21,
+            "name": "Brazilian GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 63,
+        "model": "races.ticket",
+        "fields": {
+            "race": 21,
+            "name": "Brazilian GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 64,
+        "model": "races.ticket",
+        "fields": {
+            "race": 22,
+            "name": "Abu Dhabi GP Champions Club",
+            "description": "Witness the 2020 Abu Dhabi Grand Prix at Yas Island in style. Choose an F1 Experiences Ticket Packages to enjoy exclusive benefits such as meet-and-greets with racing legends, Champions Club hospitality, a driving tour of the track and more to compliment your 3-Day race ticket!",
+            "price": 1500.00
+        }
+    },
+    {
+        "pk": 65,
+        "model": "races.ticket",
+        "fields": {
+            "race": 22,
+            "name": "Abu Dhabi GP Grandstand Seating",
+            "description": "Watch all the Formula 1 action from the trackside grandstands of your choice!",
+            "price": 300.00
+        }
+    },
+    {
+        "pk": 66,
+        "model": "races.ticket",
+        "fields": {
+            "race": 22,
+            "name": "Abu Dhabi GP General Admission",
+            "description": "Watch all the Formula 1 action from any of the general admission zones!",
+            "price": 150.00
         }
     }
 ]
