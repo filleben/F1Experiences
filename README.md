@@ -142,6 +142,38 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 
 ## Deployment
 
+To deploy this page to Heroku from its [GitHub repository](https://github.com/filleben/F1Experiences), the following steps were taken: 
+
+1. Go to the **Heroku Dashboard** and create a **New App** with the region set to **Europe**.
+2. In the **Settings** tab of your app click **Reveal Config Vars**.
+3. Enter the following required environment variables, **AWS_ACCESS_KEY_ID**, **AWS_SECRET_ACCESS_KEY**, **DATABASE_URL**, **EMAIL_HOST_PASS**, **EMAIL_HOST_USER**, **SECRET_KEY**, **STRIPE_PUBLIC_KEY**, **STRIPE_SECRET_KEY**, **STRIPE_WH_SECRET** and finally set **USE_AWS** to **True**.
+4. In your IDE of choice create a **env.py** containing **all** of the variables from step 3 and add it to the **.gitignore**
+5. In your IDE of choice create a **requirements.txt** by using the command **pip freeze -local > requirements.txt**
+6. In your IDE of choice create a **Profile** by using the command **echo web: gunicorn F1Experiences.wsgi:application app.py > Procfile**
+7. Go to the **Deploy** tab and select **Heroku Git**. 
+8. In your IDE of choice use the command **git push heroku master**.
+
+Note: You will need the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line) downloaded and installed to push from the command line.
+ 
+Further reading and troubleshooting on deploying to Heroku can be found [here](https://devcenter.heroku.com/categories/deployment).
+
+To clone this project from GitHub:
+
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository. 
+3. Open your IDE of choice.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type `` `git clone` ``, and then paste the URL you copied in Step 3.
+```console
+git clone https://github.com/filleben/F1Experiences
+```
+
+6. Press Enter. Your local clone will be created.
+
+Note: You will need to make an **env.py** file containing **all** of the required environment variables (See Above) for the project to function correctly.
+
+Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
+
 <span id="credits"></span>
 
 ## Credits
