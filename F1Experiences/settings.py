@@ -33,7 +33,7 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'dfba8d390bb8.ngrok.io',
+    'f1-experiences.herokuapp.com',
     '127.0.0.1',
 ]
 
