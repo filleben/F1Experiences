@@ -8,7 +8,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 
 def all_races(request):
-    race_list = Race.objects.all()
+    race_list = Race.objects.all().order_by('id')
     page = request.GET.get('page', 1)
 
     paginator = Paginator(race_list, 6)
@@ -48,7 +48,7 @@ def event_management(request):
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
     
-    races = Race.objects.all()
+    races = Race.objects.all().order_by('id')
     context = {
         'races': races,
     }
