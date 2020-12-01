@@ -1,6 +1,6 @@
 # F1 Experiences
 
-![Site Preview]()
+![Site Preview](static/images/site-preview.jpg)
 
 ---
 
