@@ -5,8 +5,12 @@ from .forms import UserProfileForm
 from checkout.models import Order, OrderLineItem
 from django.contrib.auth.decorators import login_required
 
+#Update/view user profile
 @login_required
 def profile(request):
+    """
+    Displays user profile, updates user profile from User Profile Form if submitted.
+    """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -28,7 +32,11 @@ def profile(request):
 
     return render(request, 'accounts/profile.html', context)
 
+#View order history
 def order_history(request, order_number):
+    """
+    Displays user order history
+    """
     order = get_object_or_404(Order, order_number=order_number)
     context = {
         'order': order,
