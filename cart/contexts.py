@@ -1,8 +1,11 @@
 from django.shortcuts import get_object_or_404
 from races.models import Ticket
 
+#Display cart contents
 def cart_contents(request):
-
+    """
+    Displays cart items, calculates cart total
+    """
     cart_items = []
     total = 0
     ticket_count = 0
