@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
-
+#Import checkout singals
 class CheckoutConfig(AppConfig):
     name = 'checkout'
 

@@ -11,8 +11,12 @@ from accounts.forms import UserProfileForm
 import stripe
 import json
 
+#Cache Checkout Data
 @require_POST
 def cache_checkout_data(request):
+    """
+    Adds checkout data to meta data
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -26,7 +30,12 @@ def cache_checkout_data(request):
         messages.error(request,'Sorry, there seems to be a issue with your payment, please try again')
         return HttpResponse(content=e, status=400)
 
+#Checkout
 def checkout(request):
+    """
+    Gets the cart data, autofills checkout form if user is logged in
+    Charges user for purchase
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -106,8 +115,11 @@ def checkout(request):
 
     return render(request, 'checkout/checkout.html', context)
 
-
+#Checkout Success
 def checkout_success(request, order_number):
+    """
+    Displays checkout success page, saves users info if checked
+    """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 

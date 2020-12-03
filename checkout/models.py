@@ -6,6 +6,7 @@ from django_countries.fields import CountryField
 from races.models import Race, Ticket
 from accounts.models import UserProfile
 
+#Order Model
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
@@ -23,13 +24,22 @@ class Order(models.Model):
     stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
 
     def _generate_order_number(self):
+        """
+        Generates random 32 character order number
+        """
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
+        """
+        Updates order total for each order line item
+        """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
         self.save()
 
     def save(self, *args, **kwargs):
+        """
+        Checks for order number and saves order
+        """
         if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
@@ -37,6 +47,7 @@ class Order(models.Model):
     def __str__(self):
         return self.order_number
 
+#Order Line Item Model
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     ticket = models.ForeignKey(Ticket, null=False, blank=False, on_delete=models.CASCADE)
@@ -44,6 +55,9 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def save(self, *args, **kwargs):
+        """
+        Caculates line item total and saves order line item
+        """
         self.lineitem_total = self.ticket.price * self.quantity
         super().save(*args, **kwargs)
 
