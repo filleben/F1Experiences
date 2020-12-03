@@ -175,100 +175,100 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 ### User Story Tests
 
 1. View a list of events:
-  1. Go to the "Races" page.
-  2. All the events are listed, divided into 4 pages of 6 events.
+    1. Go to the "Races" page.
+    2. All the events are listed, divided into 4 pages of 6 events.
 
 2. View a list of tickets for each event:
-  1. Go to the "Races" page.
-  2. Click on the event you want to view the tickets for.
-  3. All the avaiable tickets are listed.
+    1. Go to the "Races" page.
+    2. Click on the event you want to view the tickets for.
+    3. All the avaiable tickets are listed.
 
 3. View a running total of my purchases:
-  1. Go to the "Races" page.
-  2. Click on the event you want to purchase tickets for.
-  3. Select the ticket and quantity you wish to purchase, click "Add to Cart"
-  4. The total of your purchase is now displayed with the option to "Checkout" or "Keep Shopping"
+    1. Go to the "Races" page.
+    2. Click on the event you want to purchase tickets for.
+    3. Select the ticket and quantity you wish to purchase, click "Add to Cart"
+    4. The total of your purchase is now displayed with the option to "Checkout" or "Keep Shopping"
 
 4. Create an account and view/manage orders:
-  - Creating a account the conventional method:
-    1. Click on the profile icon on the right hand side of the navabar.
-    2. Click on "Register".
-    3. Enter the required information and click "Sign Up".
-    4. Check your email for a verification message, then click the provided link.
-    5. Click "Comfirm" on the page you are directed to.
-    6. You can now Login with your username and password set in step 3.
+    - Creating a account the conventional method:
+      1. Click on the profile icon on the right hand side of the navabar.
+      2. Click on "Register".
+      3. Enter the required information and click "Sign Up".
+      4. Check your email for a verification message, then click the provided link.
+      5. Click "Comfirm" on the page you are directed to.
+      6. You can now Login with your username and password set in step 3.
   
-  - Creating a account via social login (Google):
-    1. Click on the profile icon on the right hand side of the navabar.
-    2. Click on "Login".
-    3. Click on "Sign in with Google"
-    4. Select the Google account you wish to sign with.
-    5. You have now been signed in with your Google Account.
+    - Creating a account via social login (Google):
+      1. Click on the profile icon on the right hand side of the navabar.
+      2. Click on "Login".
+      3. Click on "Sign in with Google"
+      4. Select the Google account you wish to sign with.
+      5. You have now been signed in with your Google Account.
 
-  1. Once logged in to your account, Click on the profile icon on the right hand side of the navabar.
-  2. Click on "My Profile".
-  3. Your saved information and order history can now be viewed.
+    1. Once logged in to your account, Click on the profile icon on the right hand side of the navabar.
+    2. Click on "My Profile".
+    3. Your saved information and order history can now be viewed.
 
 5. Edit/Remove items from the cart:
-  1. Click on the cart icon on the right hand side of the navabar.
-  2. Below the item you wish to remove click the "Remove" button.
+    1. Click on the cart icon on the right hand side of the navabar.
+    2. Below the item you wish to remove click the "Remove" button.
 
 6. Pay for tickets using card payment:
-  1. Select your desired tickets and add them to the cart.
-  2. Once finished shopping, click on the cart icon on the right hand side of the navabar.
-  3. Click on "Secure Checkout".
-  4. Fill in the required personal information.
-  5. Fill in your card payment detials.
-  6. Click "Order" and your order will be placed.
+    1. Select your desired tickets and add them to the cart.
+    2. Once finished shopping, click on the cart icon on the right hand side of the navabar.
+    3. Click on "Secure Checkout".
+    4. Fill in the required personal information.
+    5. Fill in your card payment detials.
+    6. Click "Order" and your order will be placed.
 
 7. Search for race events:
-  1. Go to the "Races" page.
-  2. The search box can be found above the race events.
+    1. Go to the "Races" page.
+    2. The search box can be found above the race events.
 
 8. Add/Remove race events:
-  - Add race event:
-    1. Login into your admin account.
-    2. Click on the profile icon on the right hand side of the navabar.
-    3. Click on "Event Management".
-    4. To add a race event click on "Add New Event".
-    5. Fill in the required information and click "Add Race".
+    - Add race event:
+      1. Login into your admin account.
+      2. Click on the profile icon on the right hand side of the navabar.
+      3. Click on "Event Management".
+      4. To add a race event click on "Add New Event".
+      5. Fill in the required information and click "Add Race".
   
-  - Remove race event:
-    1. Login into your admin account.
-    2. Click on the profile icon on the right hand side of the navabar.
-    3. Click on "Event Management".
-    4. Click on the event you wish to remove.
-    5. Scroll to the bottom of the page and click "Delete Race".
+    - Remove race event:
+      1. Login into your admin account.
+      2. Click on the profile icon on the right hand side of the navabar.
+      3. Click on "Event Management".
+      4. Click on the event you wish to remove.
+      5. Scroll to the bottom of the page and click "Delete Race".
 
 9. Add/Remove tickets for each race event:
-  - Add ticket:
-    1. Login into your admin account.
-    2. Click on the profile icon on the right hand side of the navabar.
-    3. Click on "Ticket Management".
-    4. To add a ticket click on "Add New Ticket".
-    5. Fill in the required information and click "Add Ticket".
+    - Add ticket:
+      1. Login into your admin account.
+      2. Click on the profile icon on the right hand side of the navabar.
+      3. Click on "Ticket Management".
+      4. To add a ticket click on "Add New Ticket".
+      5. Fill in the required information and click "Add Ticket".
 
-  - Remove ticket:
-    1. Login into your admin account.
-    2. Click on the profile icon on the right hand side of the navabar.
-    3. Click on "Ticket Management".
-    4. Click on the ticket you wish to remove.
-    5. Scroll to the bottom of the page and click "Delete Ticket".
+    - Remove ticket:
+      1. Login into your admin account.
+      2. Click on the profile icon on the right hand side of the navabar.
+      3. Click on "Ticket Management".
+      4. Click on the ticket you wish to remove.
+      5. Scroll to the bottom of the page and click "Delete Ticket".
 
 10. Edit tickets and race events:
-  - Edit ticket:
-    1. Login into your admin account.
-    2. Click on the profile icon on the right hand side of the navabar.
-    3. Click on "Ticket Management".
-    4. Click on the ticket you wish to edit.
-    5. Make the desired changes and then click "Edit Ticket"
+    - Edit ticket:
+      1. Login into your admin account.
+      2. Click on the profile icon on the right hand side of the navabar.
+      3. Click on "Ticket Management".
+      4. Click on the ticket you wish to edit.
+      5. Make the desired changes and then click "Edit Ticket"
 
-  - Edit Race:
-    1. Login into your admin account.
-    2. Click on the profile icon on the right hand side of the navabar.
-    3. Click on "Event Management".
-    4. Click on the race you wish to edit.
-    5. Make the desired changes and then click "Edit Race"
+    - Edit Race:
+      1. Login into your admin account.
+      2. Click on the profile icon on the right hand side of the navabar.
+      3. Click on "Event Management".
+      4. Click on the race you wish to edit.
+      5. Make the desired changes and then click "Edit Race"
 
 
 ### Issues Found During Testing
