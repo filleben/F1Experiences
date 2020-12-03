@@ -273,6 +273,8 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 
 ### Issues Found During Testing
 
+- User feedback messages/toasts are not displaying.
+- 404 error when trying to edit or remove tickets.
 
 <span id="deployment"></span>
 
