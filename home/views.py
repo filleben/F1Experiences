@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from races.models import Race
 
-# Create your views here.
-
+#Most Popular Races
 def popular_races(request):
+    """
+    Displays the 4 most popular race events
+    """
     races = Race.objects.order_by('-race_views')[:4]
 
     context = {
@@ -11,5 +13,6 @@ def popular_races(request):
     }
     return render(request, 'home/index.html', context)
 
+#404 error handler
 def handler_404(request, exception):
     return render(request, '404.html')
