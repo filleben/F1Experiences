@@ -2,7 +2,11 @@ from django.shortcuts import render, redirect, get_object_or_404, reverse
 from .models import Contact
 from .forms import ContactForm
 
+#Contact Form
 def contact(request):
+    """
+    Checks contact form is valid then saves the form data
+    """
     if request.method == 'POST':
 
         form_data = {
@@ -34,7 +38,11 @@ def contact(request):
 
     return render(request, 'contact/contact_page.html', context)
 
+#Contact Success
 def contact_success(request, contact_number):
+    """
+    Displays contact success page with a summary of contact info
+    """
     contact = get_object_or_404(Contact, contact_number=contact_number)
     context = {
         'contact': contact,
