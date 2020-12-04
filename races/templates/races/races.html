@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Hero Image -->
 <div class="col-12 hero-image">
     <div class="container h-100">
         <div class="row h-100">
@@ -14,10 +15,12 @@
 
 <div class="section">
     <div class="container-fluid">
+        <!-- Location Text -->
         <div class="row">
             <div class="col text-center mt-3 mb-3">
                 <p class="font location-text"><a href="{% url 'home' %}">Home</a> / Event Calender</p>
                 <h1 class="font">2020 Event Calender</h1>
+                <!-- Event Search -->
                 <div class="col font text-center mb-3 mt-3">
                     <form method="GET" action="{% url 'event_search' %}"
                         class="form-inline my-2 my-lg-0 justify-content-center">
@@ -31,6 +34,7 @@
         </div>
     </div>
     <div class="container-fluid">
+        <!-- Race Events -->
         <div class="row">
             {% for race in races %}
             <div class="col-lg-4 font text-center mb-3" data-aos="fade-up">
@@ -47,6 +51,7 @@
             {% endfor %}
         </div>
     </div>
+    <!-- Pagination -->
     <nav aria-label="Page navigation example">
         {% if races.has_other_pages %}
         <ul class="mt-4 mb-4 pagination justify-content-center font">

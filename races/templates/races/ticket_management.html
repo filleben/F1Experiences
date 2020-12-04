@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Hero Image -->
 <div class="col-12 hero-image">
     <div class="container h-100">
         <div class="row h-100">
@@ -15,10 +16,12 @@
 <div class="section">
     <div class="container-fluid">
         <div class="row">
+            <!-- Location Text -->
             <div class="col text-center mt-3 mb-3">
                 <p class="font location-text"><a href="{% url 'home' %}">Home</a> / Ticket Management</p>
                 <h1 class="font">Ticket Management</h1>
                 <div class="col font text-center mb-3 mt-3">
+                    <!-- Ticket Search -->
                     <form method="GET" action="{% url 'ticket_management_search' %}"
                         class="form-inline my-2 my-lg-0 justify-content-center">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
@@ -34,6 +37,7 @@
         </div>
     </div>
     <div class="container-fluid">
+        <!-- Ticket List -->
         <div class="row">
             {% for ticket in tickets %}
             <div class="col-lg-4 font text-center mb-3">
