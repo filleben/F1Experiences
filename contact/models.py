@@ -2,7 +2,7 @@ from django.db import models
 import uuid
 
 class Contact(models.Model):
-    contact_number = models.CharField(max_length=16, null=False, editable=False)
+    contact_number = models.CharField(max_length=32, null=False, editable=False)
     first_name = models.CharField(max_length=254, null=False, blank=False)
     last_name = models.CharField(max_length=254, null=False, blank=False)
     contact_email = models.EmailField(max_length=254, null=False, blank=False)
