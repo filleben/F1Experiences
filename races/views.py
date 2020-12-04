@@ -151,7 +151,7 @@ def edit_ticket(request, ticket_id):
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
 
-    tickets = Ticket.objects.filter(id=ticket_id)
+    tickets = Ticket.objects.filter(id=ticket_id).first()
     if request.method == 'POST':
         form = TicketForm(request.POST, request.FILES, instance=tickets)
         if form.is_valid():
