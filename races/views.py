@@ -151,20 +151,20 @@ def edit_ticket(request, ticket_id):
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
 
-    tickets = Ticket.objects.filter(id=ticket_id).first()
+    ticket = Ticket.objects.filter(id=ticket_id).first()
     if request.method == 'POST':
-        form = TicketForm(request.POST, request.FILES, instance=tickets)
+        form = TicketForm(request.POST, request.FILES, instance=ticket)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added new ticket!')
+            messages.success(request, 'Successfully updated ticket!')
             return redirect(reverse('ticket_management'))
         else:
             messages.error(request, 'Error adding ticket, please check your form and try again.')
     else:
-        form = TicketForm(instance=tickets)
+        form = TicketForm(instance=ticket)
     context = {
         'form': form,
-        'tickets': tickets,
+        'ticket': ticket,
     }
 
     return render(request, 'races/edit_ticket.html', context)
@@ -175,7 +175,7 @@ def delete_ticket(request, ticket_id):
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
         
-    tickets = Ticket.objects.filter(id=ticket_id)
+    ticket = Ticket.objects.filter(id=ticket_id)
     ticket.delete()
     messages.success(request, 'Successfully deleted ticket!')
     return redirect(reverse('ticket_management'))
