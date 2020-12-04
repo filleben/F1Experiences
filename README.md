@@ -270,11 +270,12 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
       4. Click on the race you wish to edit.
       5. Make the desired changes and then click "Edit Race"
 
+### All tests performed with no errors found.
 
 ### Issues Found During Testing
 
-- User feedback messages/toasts are not displaying.
-- 404 error when trying to edit or remove tickets.
+- User feedback messages/toasts are not displaying. This was fixed by changing the position of the JQuery script in the base.html template.
+- 404 error when trying to edit or remove tickets. This was fixed by adding ".first()" to the ticket query and changing context name from "tickets" to "ticket".
 
 <span id="deployment"></span>
 
