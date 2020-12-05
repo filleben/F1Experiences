@@ -5,9 +5,11 @@ from .models import Race, Ticket
 from .forms import RaceForm, TicketForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-# Create your views here.
-
+#View All Races
 def all_races(request):
+    """
+    Displays all the race events with 6 races per page 
+    """
     race_list = Race.objects.all().order_by('id')
     page = request.GET.get('page', 1)
 
@@ -25,7 +27,11 @@ def all_races(request):
 
     return render(request, 'races/races.html', context)
 
+#Race Details
 def race_details(request, race_id):
+    """
+    Displays available tickets for each race, adds 1 to the race view count
+    """
     races = Race.objects.filter(id=race_id)
     tickets = Ticket.objects.filter(race_id=race_id)
 
@@ -42,8 +48,12 @@ def race_details(request, race_id):
     }
     return render(request, 'races/race_details.html', context)
 
+#Event Management
 @login_required
 def event_management(request):
+    """
+    Displays all race events, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -54,8 +64,12 @@ def event_management(request):
     }
     return render(request, 'races/event_management.html', context)
 
+#Ticket Management
 @login_required
 def ticket_management(request):
+    """
+    Displays all tickets, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -66,8 +80,12 @@ def ticket_management(request):
     }
     return render(request, 'races/ticket_management.html', context)
 
+#Add Race
 @login_required
 def add_race(request):
+    """
+    Adds a race to the database, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -88,8 +106,12 @@ def add_race(request):
 
     return render(request, 'races/add_race.html', context)
 
+#Add Ticket 
 @login_required
 def add_ticket(request):
+    """
+    Adds a ticket to the database, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -110,8 +132,12 @@ def add_ticket(request):
 
     return render(request, 'races/add_ticket.html', context)
 
+#Edit Race
 @login_required
 def edit_race(request, race_id):
+    """
+    Edit race events, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -134,8 +160,12 @@ def edit_race(request, race_id):
 
     return render(request, 'races/edit_race.html', context)
 
+#Delete Race
 @login_required
 def delete_race(request, race_id):
+    """
+    Deletes race events from database, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -145,8 +175,12 @@ def delete_race(request, race_id):
     messages.success(request, 'Successfully deleted race event!')
     return redirect(reverse('event_management'))
 
+#Edit Ticket
 @login_required
 def edit_ticket(request, ticket_id):
+    """
+    Edit existing tickets, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -169,8 +203,12 @@ def edit_ticket(request, ticket_id):
 
     return render(request, 'races/edit_ticket.html', context)
 
+#Delete Ticket
 @login_required
 def delete_ticket(request, ticket_id):
+    """
+    Deletes tickets from database, checks user is super user
+    """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))

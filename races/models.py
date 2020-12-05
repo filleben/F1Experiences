@@ -1,7 +1,6 @@
 from django.db import models
 
-# Create your models here.
-
+#Race Model
 class Race(models.Model):
     name = models.CharField(max_length=400)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -22,6 +21,7 @@ class Race(models.Model):
     def get_date(self):
         return self.date
 
+#Ticket Model
 class Ticket(models.Model):
     race = models.ForeignKey('Race', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
