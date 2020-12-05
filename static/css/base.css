@@ -17,10 +17,39 @@
     font-family: "f1FontBold";
 }
 
+/*------General-*/
+html {
+    overflow-x: hidden;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+.order-sum {
+    font-size: 1.5rem;
+}
+
+/*------Navbar-*/
 .navbar {
     background-color: #ff0000;
 }
 
+.hvr-sweep-to-right:before {
+    background-color: #ffffff;
+    height: 10px;
+    margin-top: 30px;
+}
+
+/*------Buttons-*/
 .btn-outline {
     color: #ffffff;
     border-color: #ffffff;
@@ -53,6 +82,7 @@
     cursor: pointer;
 }
 
+/*------Custom File Input-*/
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
     border-color: #ff0000;
@@ -64,6 +94,7 @@
     border-radius: 0;
 }
 
+/*------Footer-*/
 footer {
     background-color: #ff0000;
 }
@@ -88,6 +119,7 @@ footer {
     background-color: #000000;
 }
 
+/*------Header-*/
 .hero-image {
     min-width: 100%;
     min-height: 100%;
@@ -96,46 +128,6 @@ footer {
     background: url(https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/19571-F1-Experiences-Generic-Racing-Image-2-7f4cc8572926c738c732b93067dffd87.jpg) no-repeat 50% 50%;
     z-index: -1;
     background-size: cover;
-}
-
-html {
-    overflow-x: hidden;
-}
-
-.title {
-    text-transform: uppercase;
-}
-
-.flag {
-    height: 150px;
-    width: 300px;
-    border-radius: 0.5rem;
-}
-
-a {
-    color: inherit;
-}
-
-a:hover {
-    color: #ff0000;
-}
-
-.hvr-sweep-to-right:before {
-    background-color: #ffffff;
-    height: 10px;
-    margin-top: 30px;
-}
-
-.circuit-map {
-    height: auto;
-    width: 600px;
-    border-radius: 0.5rem;
-}
-
-.half-border {
-    border-right: 6px solid #ff0000;
-    border-bottom: 6px solid #ff0000;
-    border-radius: 0.5rem;
 }
 
 header {
@@ -167,10 +159,27 @@ header video {
     border-color: #d3d3d3;
 }
 
-.order-sum {
-    font-size: 1.5rem;
+/*------Race Details Images-*/
+.flag {
+    height: 150px;
+    width: 300px;
+    border-radius: 0.5rem;
 }
 
+.circuit-map {
+    height: auto;
+    width: 600px;
+    border-radius: 0.5rem;
+}
+
+/*------Borders-*/
+.half-border {
+    border-right: 6px solid #ff0000;
+    border-bottom: 6px solid #ff0000;
+    border-radius: 0.5rem;
+}
+
+/*------Stripe-*/
 .StripeElement {
   box-sizing: border-box;
   height: 40px;
@@ -194,6 +203,7 @@ header video {
     border-radius: 0.5rem;
 }
 
+/*------Toasts/Messages-*/
 .message-container {
     position: fixed;
     top: 72px;
@@ -213,6 +223,7 @@ header video {
     padding-top: 100px;
 }
 
+/*------Media Rules-*/
 @media(max-width: 450px) {
     .title {
         font-size: 43px;

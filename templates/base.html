@@ -49,8 +49,10 @@
 </head>
 
 <body>
+    <!-- Header Injection -->
     {% include 'header.html' %}
 
+    <!-- Django Messages -->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -67,14 +69,17 @@
 
     {% block content %}
     {% endblock %}
-
+    
+    <!-- Footer Injection -->
     {% include 'footer.html' %}
 
     {% block postloadjs %}
+    <!-- Toast Script -->
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
