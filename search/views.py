@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from races.models import Race, Ticket
 
-#Event Search
+
 def event_search(request):
     """
     Search race events
@@ -13,7 +13,7 @@ def event_search(request):
         }
         return render(request, 'races/races.html', context)
 
-#Ticket Management Search
+
 def ticket_management_search(request):
     """
     Ticket management search for admin use
@@ -25,7 +25,7 @@ def ticket_management_search(request):
         }
         return render(request, 'races/ticket_management.html', context)
 
-#Event Management Search
+
 def event_management_search(request):
     """
     Event management search for admin use
