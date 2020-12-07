@@ -21,6 +21,9 @@
 html {
     overflow-x: hidden;
 }
+.section {
+    min-height: 85vh;
+}
 
 .title {
     text-transform: uppercase;
@@ -96,6 +99,7 @@ a:hover {
 
 /*------Footer-*/
 footer {
+    padding: 1%;
     background-color: #ff0000;
 }
 
