@@ -1,17 +1,19 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from .forms import OrderForm
 from django.conf import settings
 from cart.contexts import cart_contents
-from races.models import Race, Ticket
+from races.models import Ticket
 from .models import Order, OrderLineItem
 from accounts.models import UserProfile
 from accounts.forms import UserProfileForm
 import stripe
 import json
 
-#Cache Checkout Data
+
 @require_POST
 def cache_checkout_data(request):
     """
@@ -27,10 +29,11 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request,'Sorry, there seems to be a issue with your payment, please try again')
+        messages.error(request, 'Sorry, there seems to be a issue with your'
+                                'payment, please try again')
         return HttpResponse(content=e, status=400)
 
-#Checkout
+
 def checkout(request):
     """
     Gets the cart data, autofills checkout form if user is logged in
@@ -52,7 +55,7 @@ def checkout(request):
             'county': request.POST['county'],
             'country': request.POST['country'],
         }
-        
+
         order_form = OrderForm(form_data)
 
         if order_form.is_valid():
@@ -70,10 +73,13 @@ def checkout(request):
                 )
                 order_line_item.save()
 
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
 
         else:
-            messages.error(request, "Sorry there was a problem, please check the information you have provided")
+            messages.error(request, "Sorry there was a problem,"
+                                    "please check the information you"
+                                    "have provided")
     else:
         cart = request.session.get('cart', {})
         if not cart:
@@ -115,7 +121,7 @@ def checkout(request):
 
     return render(request, 'checkout/checkout.html', context)
 
-#Checkout Success
+
 def checkout_success(request, order_number):
     """
     Displays checkout success page, saves users info if checked

@@ -8,6 +8,7 @@ from accounts.models import UserProfile
 import json
 import time
 
+
 class StripeWebhook_Handler:
     """
     Handle webhooks sent from stripe
@@ -23,7 +24,8 @@ class StripeWebhook_Handler:
             {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_number': settings.DEFAULT_CONTACT_NUMBER})
+            {'order': order,
+             'contact_number': settings.DEFAULT_CONTACT_NUMBER})
 
         send_mail(
             subject,
@@ -94,7 +96,8 @@ class StripeWebhook_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook Received: {event["type"]} | SUCCESS: Order has been created',
+                content=f'Webhook Received: {event["type"]} | SUCCESS: '
+                        'Order has been created',
                 status=200
             )
         else:
@@ -130,7 +133,8 @@ class StripeWebhook_Handler:
                 )
         self._send_confirmation_email(order)
         return HttpResponse(
-            content=f'Webhook Received: {event["type"]} | SUCCESS: Order created in webhook',
+            content=f'Webhook Received: {event["type"]} | SUCCESS: '
+                    'Order created in webhook',
             status=200
         )
 
