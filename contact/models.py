@@ -1,9 +1,13 @@
 from django.db import models
 import uuid
 
-#Contact Model
+
 class Contact(models.Model):
-    contact_number = models.CharField(max_length=32, null=False, editable=False)
+    """
+    Contact Model
+    """
+    contact_number = models.CharField(max_length=32, null=False,
+                                      editable=False)
     first_name = models.CharField(max_length=254, null=False, blank=False)
     last_name = models.CharField(max_length=254, null=False, blank=False)
     contact_email = models.EmailField(max_length=254, null=False, blank=False)
@@ -16,7 +20,7 @@ class Contact(models.Model):
         Generates random 32 character contact number
         """
         return uuid.uuid4().hex.upper()
-    
+
     def save(self, *args, **kwargs):
         """
         Checks for contact number and saves contact message and info
@@ -26,4 +30,4 @@ class Contact(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} with subject {self.subject}"
+        return f"{self.first_name} {self.last_name} Subject: {self.subject}"
