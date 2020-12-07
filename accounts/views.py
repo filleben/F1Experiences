@@ -2,14 +2,15 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from .models import UserProfile
 from .forms import UserProfileForm
-from checkout.models import Order, OrderLineItem
+from checkout.models import Order
 from django.contrib.auth.decorators import login_required
 
-#Update/view user profile
+
 @login_required
 def profile(request):
     """
-    Displays user profile, updates user profile from User Profile Form if submitted.
+    Displays user profile, updates user profile from
+    User Profile Form if submitted.
     """
     profile = get_object_or_404(UserProfile, user=request.user)
 
@@ -19,7 +20,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile Updated')
         else:
-             messages.error(request, 'Error updating profile, please check your form and try again.')
+            messages.error(request, 'Error updating profile, please check your'
+                                    'form and try again.')
     else:
         form = UserProfileForm(instance=profile)
 
@@ -32,7 +34,7 @@ def profile(request):
 
     return render(request, 'accounts/profile.html', context)
 
-#View order history
+
 def order_history(request, order_number):
     """
     Displays user order history
