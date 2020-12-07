@@ -3,11 +3,12 @@ from django.urls import reverse, resolve
 from races.models import Race, Ticket
 from races.views import all_races, race_details
 
+
 class TestViews(TestCase):
-    """
-    Testing the all_races view
-    """
     def test_all_races(self):
+        """
+        Testing the all_races view
+        """
         client = Client()
         response = client.get(reverse('races'))
 
@@ -16,7 +17,8 @@ class TestViews(TestCase):
 
     def test_race_details(self):
         """
-        Testing the race_details view, creates a race and ticket and sets the URL to the race ID
+        Testing the race_details view, creates a race and ticket
+        and sets the URL to the race ID
         """
         client = Client()
         race = Race.objects.create(
@@ -30,17 +32,20 @@ class TestViews(TestCase):
             location='test_location',
             race_views='0',
         )
-        id = race.id
+        race_id = race.id
 
         ticket = Ticket.objects.create(
             name='test_ticket',
             description='test_description',
             price='0.00',
         )
+        ticket_id = ticket
 
-        response = client.get(reverse('race_detail', args=[id]))
+        response = client.get(reverse('race_detail',
+                              args=[race_id]))
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'races/race_details.html')
+
 
 class TestURLs(SimpleTestCase):
     def test_all_races_URL(self):
@@ -58,6 +63,7 @@ class TestURLs(SimpleTestCase):
         url = reverse('race_detail', args=[1])
         print(resolve(url))
         self.assertEquals(resolve(url).func, race_details)
+
 
 class TestModels(TestCase):
     def test_race_model(self):
@@ -88,7 +94,8 @@ class TestModels(TestCase):
 
     def test_ticket_model(self):
         """
-        Testing Ticket model is passing values correctly and related to the Race model
+        Testing Ticket model is passing values correctly
+        and related to the Race model
         """
         race = Race.objects.create(
             name='test_race',
