@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from races.models import Race
 
-#Most Popular Races
+
 def popular_races(request):
     """
     Displays the 4 most popular race events
@@ -13,6 +13,9 @@ def popular_races(request):
     }
     return render(request, 'home/index.html', context)
 
-#404 error handler
+
 def handler_404(request, exception):
+    """
+    404 Error Handler
+    """
     return render(request, '404.html')
