@@ -172,6 +172,16 @@ I used the following web browsers on both desktop (Windows) and mobile (Android)
 - [Microsoft Edge](https://www.microsoft.com/en-us/edge)
   - Desktop Version: 44.18362.449.0
 
+The project was run through both [HTML Validation](https://validator.w3.org/) and [CSS Validation](https://jigsaw.w3.org/css-validator) with no errors found.
+
+HTML and CSS tests carried out have been documented and visualised [here](https://github.com/filleben/F1Experiences/tree/master/testing/site-testing.pdf)
+
+JavaScript tests carried out have been documented and visualised [here](https://github.com/filleben/F1Experiences/tree/master/testing/js-testing.png)
+
+Python tests carried out have been documented and visualised [here](https://github.com/filleben/F1Experiences/tree/master/testing/python-testing.pdf)
+
+Futher python testing was also carried out using Django Testing found in the test.py files in each app.
+
 ### User Story Tests
 
 1. View a list of events:
@@ -302,7 +312,7 @@ To clone this project from GitHub:
 2. In the Clone with HTTPs section, copy the clone URL for the repository. 
 3. Open your IDE of choice.
 4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type `` `git clone` ``, and then paste the URL you copied in Step 3.
+5. Type `` `git clone` ``, and then paste the URL you copied in Step 2.
 ```console
 git clone https://github.com/filleben/F1Experiences
 ```
