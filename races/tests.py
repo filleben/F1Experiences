@@ -1,7 +1,10 @@
 from django.test import TestCase, SimpleTestCase, Client
 from django.urls import reverse, resolve
 from races.models import Race, Ticket
-from races.views import all_races, race_details
+from races.views import (all_races, race_details, event_management,
+                         ticket_management, edit_race, edit_ticket,
+                         delete_race, delete_ticket, add_race, add_ticket
+                         )
 
 
 class TestViews(TestCase):
@@ -63,6 +66,70 @@ class TestURLs(SimpleTestCase):
         url = reverse('race_detail', args=[1])
         print(resolve(url))
         self.assertEquals(resolve(url).func, race_details)
+
+    def test_event_management_url(self):
+        """
+        Testing event_management URL
+        """
+        url = reverse('event_management')
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, event_management)
+
+    def test_ticket_management_url(self):
+        """
+        Testing ticket_management URL
+        """
+        url = reverse('ticket_management')
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, ticket_management)
+
+    def test_edit_race_URL(self):
+        """
+        Testing edit_race URL
+        """
+        url = reverse('edit_race', args=[1])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, edit_race)
+
+    def test_edit_ticket_URL(self):
+        """
+        Testing edit_race URL
+        """
+        url = reverse('edit_ticket', args=[1])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, edit_ticket)
+
+    def test_delete_ticket_URL(self):
+        """
+        Testing delete_ticket URL
+        """
+        url = reverse('delete_ticket', args=[100])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, delete_ticket)
+
+    def test_delete_race_URL(self):
+        """
+        Testing delete_race URL
+        """
+        url = reverse('delete_race', args=[100])
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, delete_race)
+
+    def test_add_race_url(self):
+        """
+        Testing add_race URL
+        """
+        url = reverse('add_race')
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, add_race)
+
+    def test_add_ticket_url(self):
+        """
+        Testing add_race URL
+        """
+        url = reverse('add_ticket')
+        print(resolve(url))
+        self.assertEquals(resolve(url).func, add_ticket)
 
 
 class TestModels(TestCase):
