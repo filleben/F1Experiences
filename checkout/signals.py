@@ -9,7 +9,6 @@ def update_on_save(sender, instance, created, **kwargs):
     Save Signal
     Updates order total when new line item is added
     """
-    print('save signal received!')
     instance.order.update_total()
 
 
@@ -19,5 +18,4 @@ def update_on_delete(sender, instance, **kwargs):
     Delete Signal
     Updates order total when new line item is deleted
     """
-    print('delete signal received!')
     instance.order.update_total()
