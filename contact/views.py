@@ -3,7 +3,7 @@ from django.contrib import messages
 from .models import Contact
 from .forms import ContactForm
 
-#Contact Form
+
 def contact(request):
     """
     Checks contact form is valid then saves the form data
@@ -18,18 +18,20 @@ def contact(request):
             'subject': request.POST['subject'],
             'message': request.POST['message'],
         }
-        
+
         contact_form = ContactForm(form_data)
 
         if contact_form.is_valid():
             contact = contact_form.save(commit=False)
             contact.save()
 
-            return redirect(reverse('contact_success', args=[contact.contact_number]))
+            return redirect(reverse('contact_success',
+                            args=[contact.contact_number]))
 
         else:
-            messages.error(request, "Sorry there was a problem, please check the information you have provided")
-    
+            messages.error(request, "Sorry there was a problem,"
+                           "please check the information you have provided")
+
     else:
         contact_form = ContactForm()
 
@@ -39,7 +41,7 @@ def contact(request):
 
     return render(request, 'contact/contact_page.html', context)
 
-#Contact Success
+
 def contact_success(request, contact_number):
     """
     Displays contact success page with a summary of contact info
