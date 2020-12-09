@@ -5,6 +5,7 @@ from races.views import (all_races, race_details, event_management,
                          ticket_management, edit_race, edit_ticket,
                          delete_race, delete_ticket, add_race, add_ticket
                          )
+from races.forms import RaceForm, TicketForm
 
 
 class TestViews(TestCase):
@@ -184,3 +185,65 @@ class TestModels(TestCase):
         )
         ticket.save()
         self.assertEquals(ticket.race, race)
+
+
+class TestForms(TestCase):
+    def test_race_form_valid(self):
+        """
+        Testing contact_form is valid
+        """
+        form = RaceForm(data={
+            'name': 'test_race',
+            'friendly_name': 'test_friendly_name',
+            'date': 'test_date',
+            'image_url': 'www.test.com',
+            'image': 'test.png',
+            'flag_url': 'www.test.com',
+            'flag': 'flag.png',
+            'location': 'test_location',
+            'race_views': '0',
+        })
+        self.assertTrue(form.is_valid())
+
+    def test_contact_form_invalid(self):
+        """
+        Testing race_form is invalid
+        """
+        form = RaceForm(data={
+            'name': 'test_race',
+            'friendly_name': 'test_friendly_name',
+            'date': 'test_date',
+            'image_url': 'test_image_URL',
+            'image': 'test.png',
+            'flag_url': 'test_flag_URL',
+            'flag': 'flag.png',
+            'location': 'test_location',
+            'race_views': 'B',
+        })
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 3)
+
+    def test_ticket_form_valid(self):
+        """
+        Testing ticket_form is valid
+        """
+        form = TicketForm(data={
+            'race': '',
+            'name': 'test_ticket',
+            'description': 'test_description',
+            'price': '10.00'
+        })
+        self.assertTrue(form.is_valid())
+
+    def test_ticket_form_invalid(self):
+        """
+        Testing ticket_form is invalid
+        """
+        form = TicketForm(data={
+            'race': 'random_race',
+            'name': 'test_ticket',
+            'description': 'test_description',
+            'price': '10.00'
+        })
+        self.assertFalse(form.is_valid())
+        self.assertEquals(len(form.errors), 1)
