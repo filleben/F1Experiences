@@ -52,6 +52,14 @@ I expect that the majority of the users will fall into the following criteria:
 
 The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
+I made some changes from the initial wireframe design the major changes include:
+
+  - A user profile page were added containing user info and order history.
+  - Edit pages were added for both race events and tickets.
+  - A contact page was added for users to contact the site owners.
+  - A search bar was added to the race packages page.
+  - Testomonials were added to the home page.
+
 ### Design Choices
 
 - **Font**: I wanted the project to look as professional as possible so decided to use a copy of the official Formula One font sourced from [Here](https://www.ffonts.net/Formula1-Display-Regular.font.download).
@@ -81,6 +89,7 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 ### Features Left to Implement
 
+- Add a undo button in the event of accidental data deletion by a site manager.
 
 <span id="technologies"></span>
 
@@ -182,7 +191,7 @@ Python tests carried out have been documented and visualised [here](https://gith
 
 Futher python testing was also carried out using Django Testing found in the test.py files in each app.
 
-![Django Testing](https://github.com/filleben/F1Experiences/tree/master/testing/django_tests.png)
+![Django Testing](testing/django_tests.png)
 
 ### User Story Tests
 
