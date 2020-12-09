@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib import messages
+from accounts.models import UserProfile
 from .models import Contact
 from .forms import ContactForm
 
@@ -32,6 +33,15 @@ def contact(request):
             messages.error(request, "Sorry there was a problem,"
                            "please check the information you have provided")
 
+    if request.user.is_authenticated:
+        try:
+            profile = UserProfile.objects.get(user=request.user)
+            contact_form = ContactForm(initial={
+                'contact_email': profile.user.email,
+                'contact_phone': profile.default_phone_number,
+            })
+        except UserProfile.DoesNotExist:
+            contact_form = ContactForm()
     else:
         contact_form = ContactForm()
 
