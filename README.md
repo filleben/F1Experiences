@@ -182,6 +182,8 @@ Python tests carried out have been documented and visualised [here](https://gith
 
 Futher python testing was also carried out using Django Testing found in the test.py files in each app.
 
+![Django Testing](https://github.com/filleben/F1Experiences/tree/master/testing/django_tests.png)
+
 ### User Story Tests
 
 1. View a list of events:
@@ -329,10 +331,10 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ### Content
   - I followed [this tutorial](https://simpleisbetterthancomplex.com/tutorial/2016/08/03/how-to-paginate-with-django.html) to intergrate pagination into the project.
+  - The Code Insitute project [Boutique_ado](https://github.com/ckz8780/boutique_ado_v1) was followed during development.
 
 ### Media
-
-
+ - The Formula 1 Logo was taken from the [Formula 1 Official Site](https://www.formula1.com/).
 
 ### Acknowledgements
 
