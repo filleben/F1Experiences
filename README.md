@@ -10,7 +10,7 @@
 
 ---
 
-The goal of this project is to make an application that allows users to view and purchase tickets/race packages to Formula 1 events aswell as allowing site admins to easily add new and edit existing events.
+The goal of this project is to make an application that allows users to view and purchase tickets/race packages to Formula 1 events as well as allowing site admins to easily add new and edit existing events.
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ I expect that the majority of the users will fall into the following criteria:
 
 - As a user, I want to be able to view a list of events.
 - As a user, I want to be able to view a list of tickets for each event.
-- As a user, I want to be able to view a running total of my puchases.
+- As a user, I want to be able to view a running total of my purchases.
 - As a user, I want to be able to create an account to view and manage my orders.
 - As a user, I want to be able to edit and remove items from my cart while shopping.
 - As a user, I want to be able to pay for tickets using card payment.
@@ -55,11 +55,11 @@ The wireframes were made using [Balsamiq](https://balsamiq.cloud)
 
 I made some changes from the initial wireframe design the major changes include:
 
-  - A user profile page were added containing user info and order history.
+  - A user profile page was added containing user info and order history.
   - Edit pages were added for both race events and tickets.
   - A contact page was added for users to contact the site owners.
   - A search bar was added to the race packages page.
-  - Testomonials were added to the home page.
+  - Testimonials were added to the home page.
 
 ### Design Choices
 
@@ -82,20 +82,20 @@ The Schema was made using [dbdiagram.io](https://dbdiagram.io/)
 ## Features
 
 - **Navigation bar**: Allows the user to navigate to all the pages of the site, consistent throughout the site.
-- **User Registration**: Users can create a account by providing a valid email address, username and password.
-- **User Authentication**: Users can login to their accounts by providing the correct username and password combination.
-- **Social Login**: Users can register and login to the site by using there Google account.
+- **User Registration**: Users can create an account by providing a valid email address, username and password.
+- **User Authentication**: Users can log in to their accounts by providing the correct username and password combination.
+- **Social Login**: Users can register and login to the site by using their Google account.
 - **Password Reset**: Users can reset their password if forgotten.
 - **Most Popular Events**: The 4 most popular events are featured on the home page.
 - **Testimonials**: 4 different user testimonials are featured on the home page.
 - **Contact Page**: User can get in touch using the contact form on the contact page.
-- **Event Page**: A full list of race events, split into pages with 6 events per page.
-- **Event Search**: Users can search for specfic events.
-- **Event Details**: Each race event has a details page showing the avaiable tickets and circuit map for each event.
+- **Event Page**: A full list of race events split into pages with 6 events per page.
+- **Event Search**: Users can search for specific events.
+- **Event Details**: Each race event has a details page showing the available tickets and circuit map for each event.
 - **Cart**: Users can add, view and adjust tickets in their cart.
-- **Checkout**: Users can purchase tickets in there cart using the checkout app. If users are logged in the checkout form will be prefilled with existing information when avaiable.
-- **Add/Edit/Delete Events**: Site managers can edit or delete existing race events aswell as being able to add new events.
-- **Add/Edit/Delete Tickets**: Site managers can edit or delete existing tickets for each race event aswell as being able to add new tickets.
+- **Checkout**: Users can purchase tickets in their cart using the checkout app. If users are logged in the checkout form will be prefilled with existing information when available.
+- **Add/Edit/Delete Events**: Site managers can edit or delete existing race events as well as being able to add new events.
+- **Add/Edit/Delete Tickets**: Site managers can edit or delete existing tickets for each race event as well as being able to add new tickets.
 - **404 Page**: Provides users with a message if they have entered an incorrect URL or clicked an incorrect link, gives the user the option to return to the home page.
 
 ### Features Left to Implement
@@ -200,7 +200,7 @@ JavaScript tests carried out have been documented and visualised [here](https://
 
 Python tests carried out have been documented and visualised [here](https://github.com/filleben/F1Experiences/tree/master/testing/python-testing.pdf)
 
-Futher python testing was also carried out using Django Testing found in the test.py files in each app.
+Further python testing was also carried out using Django Testing found in the test.py files in each app.
 
 ![Django Testing](testing/django_tests.png)
 
@@ -213,7 +213,7 @@ Futher python testing was also carried out using Django Testing found in the tes
 2. View a list of tickets for each event:
     1. Go to the "Races" page.
     2. Click on the event you want to view the tickets for.
-    3. All the avaiable tickets are listed.
+    3. All the available tickets are listed.
 
 3. View a running total of my purchases:
     1. Go to the "Races" page.
@@ -222,35 +222,35 @@ Futher python testing was also carried out using Django Testing found in the tes
     4. The total of your purchase is now displayed with the option to "Checkout" or "Keep Shopping"
 
 4. Create an account and view/manage orders:
-    - Creating a account the conventional method:
-      1. Click on the profile icon on the right hand side of the navabar.
+    - Creating an account the conventional method:
+      1. Click on the profile icon on the right-hand side of the navbar.
       2. Click on "Register".
       3. Enter the required information and click "Sign Up".
       4. Check your email for a verification message, then click the provided link.
-      5. Click "Comfirm" on the page you are directed to.
+      5. Click "Confirm" on the page you are directed to.
       6. You can now Login with your username and password set in step 3.
   
-    - Creating a account via social login (Google):
-      1. Click on the profile icon on the right hand side of the navabar.
+    - Creating an account via social login (Google):
+      1. Click on the profile icon on the right-hand side of the navbar.
       2. Click on "Login".
       3. Click on "Sign in with Google"
       4. Select the Google account you wish to sign with.
       5. You have now been signed in with your Google Account.
 
-    1. Once logged in to your account, Click on the profile icon on the right hand side of the navabar.
+    1. Once logged in to your account, click on the profile icon on the right-hand side of the navbar.
     2. Click on "My Profile".
     3. Your saved information and order history can now be viewed.
 
 5. Edit/Remove items from the cart:
-    1. Click on the cart icon on the right hand side of the navabar.
+    1. Click on the cart icon on the right-hand side of the navbar.
     2. Below the item you wish to remove click the "Remove" button.
 
 6. Pay for tickets using card payment:
     1. Select your desired tickets and add them to the cart.
-    2. Once finished shopping, click on the cart icon on the right hand side of the navabar.
+    2. Once finished shopping, click on the cart icon on the right-hand side of the navbar.
     3. Click on "Secure Checkout".
     4. Fill in the required personal information.
-    5. Fill in your card payment detials.
+    5. Fill in your card payment details.
     6. Click "Order" and your order will be placed.
 
 7. Search for race events:
@@ -259,45 +259,45 @@ Futher python testing was also carried out using Django Testing found in the tes
 
 8. Add/Remove race events:
     - Add race event:
-      1. Login into your admin account.
-      2. Click on the profile icon on the right hand side of the navabar.
+      1. Login in to your admin account.
+      2. Click on the profile icon on the right-hand side of the navbar.
       3. Click on "Event Management".
       4. To add a race event click on "Add New Event".
       5. Fill in the required information and click "Add Race".
   
     - Remove race event:
-      1. Login into your admin account.
-      2. Click on the profile icon on the right hand side of the navabar.
+      1. Login in to your admin account.
+      2. Click on the profile icon on the right-hand side of the navbar.
       3. Click on "Event Management".
       4. Click on the event you wish to remove.
       5. Scroll to the bottom of the page and click "Delete Race".
 
 9. Add/Remove tickets for each race event:
     - Add ticket:
-      1. Login into your admin account.
-      2. Click on the profile icon on the right hand side of the navabar.
+      1. Login in to your admin account.
+      2. Click on the profile icon on the right-hand side of the navbar.
       3. Click on "Ticket Management".
       4. To add a ticket click on "Add New Ticket".
       5. Fill in the required information and click "Add Ticket".
 
     - Remove ticket:
-      1. Login into your admin account.
-      2. Click on the profile icon on the right hand side of the navabar.
+      1. Login in to your admin account.
+      2. Click on the profile icon on the right-hand side of the navbar.
       3. Click on "Ticket Management".
       4. Click on the ticket you wish to remove.
       5. Scroll to the bottom of the page and click "Delete Ticket".
 
 10. Edit tickets and race events:
     - Edit ticket:
-      1. Login into your admin account.
-      2. Click on the profile icon on the right hand side of the navabar.
+      1. Login in to your admin account.
+      2. Click on the profile icon on the right-hand side of the navbar.
       3. Click on "Ticket Management".
       4. Click on the ticket you wish to edit.
       5. Make the desired changes and then click "Edit Ticket"
 
     - Edit Race:
-      1. Login into your admin account.
-      2. Click on the profile icon on the right hand side of the navabar.
+      1. Login in to your admin account.
+      2. Click on the profile icon on the right-hand side of the navbar.
       3. Click on "Event Management".
       4. Click on the race you wish to edit.
       5. Make the desired changes and then click "Edit Race"
@@ -318,7 +318,7 @@ To deploy this page to Heroku from its [GitHub repository](https://github.com/fi
 1. Go to the **Heroku Dashboard** and create a **New App** with the region set to **Europe**.
 2. In the **Settings** tab of your app click **Reveal Config Vars**.
 3. Enter the following required environment variables, **AWS_ACCESS_KEY_ID**, **AWS_SECRET_ACCESS_KEY**, **DATABASE_URL**, **EMAIL_HOST_PASS**, **EMAIL_HOST_USER**, **SECRET_KEY**, **STRIPE_PUBLIC_KEY**, **STRIPE_SECRET_KEY**, **STRIPE_WH_SECRET** and finally set **USE_AWS** to **True**.
-4. In your IDE of choice create a **env.py** containing **all** of the variables from step 3 and add it to the **.gitignore**
+4. In your IDE of choice create an **env.py** containing **all** of the variables from step 3 and add it to the **.gitignore**
 5. In your IDE of choice create a **requirements.txt** by using the command **pip freeze -local > requirements.txt**
 6. In your IDE of choice create a **Profile** by using the command **echo web: gunicorn F1Experiences.wsgi:application app.py > Procfile**
 7. Go to the **Deploy** tab and select **Heroku Git**. 
