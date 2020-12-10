@@ -10,7 +10,7 @@
 
 ---
 
-The goal of this project is to make an application that allows users to view and purchase tickets/race packages to Formula 1 events.
+The goal of this project is to make an application that allows users to view and purchase tickets/race packages to Formula 1 events aswell as allowing site admins to easily add new and edit existing events.
 
 ## Table of Contents
 
