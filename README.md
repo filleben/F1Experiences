@@ -15,6 +15,7 @@ The goal of this project is to make an application that allows users to view and
 ## Table of Contents
 
 - <a href="#ux">UX</a>
+- <a href="#data">Data Schema</a>
 - <a href="#features">Features</a>
 - <a href="#technologies">Technologies Used</a>
 - <a href="#testing">Testing</a>
@@ -65,6 +66,16 @@ I made some changes from the initial wireframe design the major changes include:
 - **Font**: I wanted the project to look as professional as possible so decided to use a copy of the official Formula One font sourced from [Here](https://www.ffonts.net/Formula1-Display-Regular.font.download).
 
 - **Colours**: I wanted the project to look like a product from Formula One so with this in mind I used the same colour scheme used on the [Official Site](https://www.formula1.com/). I used white (Hex: '#ffffff' RGB: 'rgb(255, 255, 255)') as the background and navbar font colour, red (Hex: '#ff0000' RGB: 'rgb(255, 0, 0)') for the navbar and borders and then black (Hex: '#000000' RGB: 'rgb(0, 0, 0)') for the body text.
+
+<span id="data"></span>
+
+## Data Schema
+
+Below is the database table setup used in the project:
+
+![Data Schema](static/images/data_schema.png)
+
+The Schema was made using [dbdiagram.io](https://dbdiagram.io/)
 
 <span id="features"></span>
 
